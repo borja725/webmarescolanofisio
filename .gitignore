@@ -1,0 +1,15 @@
+# macOS resource forks left behind when unzipping an archive
+__MACOSX/
+.DS_Store
+._*
+
+# Original theme archive — kept locally, not needed to serve the site
+*.zip
+
+# Raw video assets: exceed GitHub's 100 MB per-file limit.
+# Keep them locally or host them externally (CDN, Vimeo, YouTube).
+*.mp4
+*.mov
+
+# Agent tooling cache
+.atl/
