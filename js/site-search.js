@@ -281,15 +281,38 @@
         // would leave this item static and anchor the results panel to the navbar
         // container instead of the field. Match its specificity to win it back.
         '.navbar-nav > li.site-search{position:relative}',
-        '.site-search__form{position:relative;display:flex;align-items:center}',
-        '.site-search__input{width:150px;height:34px;padding:0 30px 0 12px;border:1px solid #ddd;',
-        'border-radius:17px;background:#fff;color:#232323;font-size:12px;line-height:34px;',
-        'outline:none;transition:width .25s ease,border-color .25s ease;-webkit-appearance:none;appearance:none}',
+        '.site-search__form{position:relative;display:flex;align-items:center;height:34px;padding:0}',
+        // The field paints no background of its own so the hero image shows
+        // through, and it takes the navbar's own text colour instead of a fixed
+        // one. `line-height` stays at `normal` on purpose: an explicit value
+        // taller than the content box (height minus the two borders) lifts the
+        // placeholder off the magnifier's centre line.
+        // `margin:0` is load-bearing, not tidiness. The theme gives every input a
+        // bottom margin for stacked forms; inside this centred flex wrapper that
+        // margin counts as part of the item's outer box, so the field gets pushed
+        // half of it upwards and the placeholder drifts off the magnifier's line.
+        // 140px leaves a little slack in the navbar row so the item never sits
+        // right on the wrapping threshold.
+        '.site-search__input{width:140px;height:34px;margin:0;padding:0 32px 0 14px;',
+        'border:1px solid rgba(35,35,35,.35);border-radius:17px;background:transparent;',
+        'color:#232323;font-size:12px;font-weight:600;line-height:normal;outline:none;',
+        'transition:border-color .25s ease;-webkit-appearance:none;appearance:none}',
         '.site-search__input::-webkit-search-cancel-button{-webkit-appearance:none}',
-        '.site-search__input::placeholder{color:#9a9a9a}',
-        '.site-search__input:focus{width:200px;border-color:#232323}',
-        '.site-search__icon{position:absolute;right:11px;top:50%;transform:translateY(-50%);',
-        'color:#9a9a9a;font-size:12px;pointer-events:none}',
+        '.site-search__input::placeholder{color:#232323;opacity:.7}',
+        // The width must not change on focus. `.navbar-nav` is a flex row with
+        // `flex-wrap: wrap` and the items already fill it almost exactly, so
+        // widening the field on focus overflows the row and drops the search
+        // box onto a second line. Focus is signalled with the border instead.
+        '.site-search__input:focus{border-color:rgba(35,35,35,.85)}',
+        '.site-search__icon{position:absolute;right:13px;top:50%;transform:translateY(-50%);',
+        'color:#232323;opacity:.7;font-size:12px;pointer-events:none}',
+        // bootsnav marks the light-over-photo navbar with `.white-link` (the home
+        // page) and leaves it off everywhere else. Mirroring that flag is what
+        // keeps the field readable on both, instead of white-on-white.
+        '.white-link .site-search__input{color:#fff;border-color:rgba(255,255,255,.55)}',
+        '.white-link .site-search__input::placeholder{color:#fff;opacity:.8}',
+        '.white-link .site-search__input:focus{border-color:#fff}',
+        '.white-link .site-search__icon{color:#fff;opacity:.9}',
         '.site-search__results{position:absolute;top:calc(100% + 8px);left:0;z-index:1050;',
         'min-width:250px;max-height:320px;overflow-y:auto;margin:0;padding:6px 0;list-style:none;',
         'background:#fff;border:1px solid #e4e4e4;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,.14);',
