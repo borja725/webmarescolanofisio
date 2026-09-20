@@ -3892,3 +3892,56 @@ aside .instafeed-grid.gutter-extra-large, footer .instafeed-grid.gutter-extra-la
 		display: none!important;
 	}
 }
+
+/* ================= Winback certification badge ================= */
+/* Default colours target DARK backgrounds (page hero).            */
+/* Add .tx-cert--on-light on white backgrounds.                    */
+.tx-cert {font-size: 15px;}
+.tx-cert--sm {font-size: 12px;}
+.tx-cert__link {color: #6fc2ff; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(111, 194, 255, .45); transition: color .25s ease, border-color .25s ease;}
+.tx-cert__link:hover, .tx-cert__link:focus {color: #a9daff; border-bottom-color: #a9daff;}
+.tx-cert--on-light .tx-cert__link {color: #0a58ca; border-bottom-color: rgba(10, 88, 202, .4);}
+.tx-cert--on-light .tx-cert__link:hover, .tx-cert--on-light .tx-cert__link:focus {color: #08419b; border-bottom-color: #08419b;}
+.tx-cert__reg {font-size: 60%;}
+.tx-cert__icon {margin-left: 7px; font-size: 11px; animation: tx-cert-pulse 1.6s ease-in-out infinite;}
+@keyframes tx-cert-pulse {
+	0%, 100% {opacity: 1; transform: translateY(0);}
+	50% {opacity: .3; transform: translateY(-1px);}
+}
+/* Respect users who ask the OS to reduce motion */
+@media (prefers-reduced-motion: reduce) {
+	.tx-cert__icon {animation: none;}
+}
+
+/* ================= Language switcher ================= */
+/* Opens on hover and on keyboard focus, so it needs no JavaScript.
+   Sits next to the social icons but outside their d-none d-md-* wrapper,
+   so it stays reachable on phones. */
+.lang-switch {position: relative; display: inline-block; vertical-align: middle; margin-left: 14px; text-align: left;}
+.lang-switch__toggle {display: inline-flex; align-items: center; gap: 6px; padding: 4px 6px; border: 0; background: none; color: #232323; font-size: 14px; line-height: 1; cursor: pointer;}
+.lang-switch__toggle i {font-size: 17px;}
+.lang-switch__code {font-weight: 600; letter-spacing: .5px;}
+.lang-switch__toggle:hover, .lang-switch:focus-within .lang-switch__toggle {color: #6f6f6f;}
+.lang-switch__menu {position: absolute; top: 100%; right: 0; z-index: 1050; min-width: 150px; margin: 0; padding: 6px 0; list-style: none; background: #ffffff; border: 1px solid #ededed; border-radius: 4px; box-shadow: 0 6px 18px rgba(0, 0, 0, .12); opacity: 0; visibility: hidden; transform: translateY(-6px); transition: opacity .18s ease, transform .18s ease, visibility .18s;}
+.lang-switch:hover .lang-switch__menu, .lang-switch:focus-within .lang-switch__menu {opacity: 1; visibility: visible; transform: translateY(0);}
+.lang-switch__menu li {margin: 0;}
+.lang-switch__menu a {display: block; padding: 8px 16px; color: #232323; font-size: 14px; line-height: 1.4; text-decoration: none; white-space: nowrap;}
+.lang-switch__menu a:hover, .lang-switch__menu a:focus {background: #f7f6f3; color: #232323;}
+.lang-switch__menu .is-current a {font-weight: 600; cursor: default;}
+@media (max-width: 767px) {
+	.lang-switch {margin-left: 4px;}
+	.lang-switch__toggle {padding: 4px 2px; font-size: 13px;}
+	.lang-switch__menu {min-width: 140px;}
+}
+@media (prefers-reduced-motion: reduce) {
+	.lang-switch__menu {transition: none;}
+}
+/* Opened by js/lang-switch.js on tap; the :hover/:focus-within rules above
+   stay as the no-JavaScript fallback. */
+.lang-switch.is-open .lang-switch__menu {opacity: 1; visibility: visible; transform: translateY(0);}
+/* Follow the social icons on the transparent hero navbar, and flip back when
+   the header turns sticky - the same pairing the theme uses for them. */
+header nav.navbar.white-link .lang-switch__toggle,
+nav.navbar.bootsnav.white-link .lang-switch__toggle {color: #fff;}
+header.sticky nav.navbar-fixed-top.header-light-transparent.white-link .lang-switch__toggle,
+header.sticky nav.navbar-fixed-top.header-light.white-link .lang-switch__toggle {color: #232323;}

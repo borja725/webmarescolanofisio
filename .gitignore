@@ -13,3 +13,7 @@ __MACOSX/
 
 # Agent tooling cache
 .atl/
+
+# Contact form credentials. Never commit this file: it is the only place the
+# mailbox password lives. The committed template is config.sample.php.
+/config.php
