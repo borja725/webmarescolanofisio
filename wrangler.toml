@@ -1,0 +1,14 @@
+# Cloudflare Workers configuration for this static site.
+#
+# This is an assets-only Worker: there is no server-side code, Cloudflare simply
+# serves the files in this repository. The build runs `npx wrangler deploy`,
+# which needs this file to know what to deploy - without it the build fails and
+# the site is never published.
+#
+# `name` must match the existing Worker exactly. A different name would create a
+# second, unrelated Worker and leave the live site untouched.
+name = "webmarescolanofisio"
+compatibility_date = "2026-09-20"
+
+[assets]
+directory = "./"
