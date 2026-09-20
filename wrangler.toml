@@ -6,7 +6,7 @@
 # the site is never published.
 #
 # `name` must match the existing Worker exactly. A different name would create a
-# second, unrelated Worker and leave the live site untouched.
+# second, unrelated Worker and leave the live site  untouched.
 name = "webmarescolanofisio"
 compatibility_date = "2026-09-20"
 
