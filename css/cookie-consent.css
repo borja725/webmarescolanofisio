@@ -129,3 +129,76 @@
     background: #111;
     color: #fff;
 }
+
+/* Click-to-load placeholder for the embedded Google map.
+
+   The map is third-party content: loading it sends the visitor's IP to Google
+   before they have agreed to anything. It stays behind an explicit click
+   rather than behind the banner's accept button, because the banner only asks
+   about analytics and a generic "accept" should not be read as covering this
+   too. */
+
+.mef-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 450px;
+    padding: 30px 22px;
+    text-align: center;
+    background: #f2f5f5;
+    border: 1px solid #dde3e4;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.mef-map__text {
+    max-width: 520px;
+    margin: 0;
+    color: #33474a;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.mef-map__btn {
+    padding: 12px 24px;
+    border: 2px solid #111;
+    border-radius: 3px;
+    background: transparent;
+    color: #111;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .18s ease, color .18s ease;
+}
+
+.mef-map__btn:hover,
+.mef-map__btn:focus-visible {
+    background: #111;
+    color: #fff;
+}
+
+.mef-map__btn:focus-visible {
+    outline: 3px solid #7fb2ff;
+    outline-offset: 2px;
+}
+
+.mef-map__alt {
+    margin: 0;
+    font-size: 13px;
+}
+
+.mef-map__alt a {
+    color: #33474a;
+    text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+    .mef-map {
+        min-height: 320px;
+        padding: 24px 16px;
+    }
+}
