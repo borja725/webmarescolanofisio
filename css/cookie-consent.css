@@ -1,0 +1,204 @@
+/* Cookie consent banner.
+   Self-hosted on purpose: the previous third-party widget offered no callback
+   when the visitor accepted, so there was no reliable way to switch analytics
+   back on, and no way to prove what had happened.
+
+   Accept and reject are deliberately the same size and weight. The AEPD
+   requires rejecting to be as easy as accepting; a greyed-out "reject" next to
+   a prominent "accept" does not meet that. */
+
+#mef-cc {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    background: #111;
+    color: #fff;
+    padding: 20px 22px;
+    box-shadow: 0 -4px 22px rgba(0, 0, 0, .28);
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    /* Hidden until the script decides it is needed, so it never flashes for
+       visitors who already made a choice. */
+    display: none;
+}
+
+#mef-cc[data-open="true"] {
+    display: block;
+}
+
+.mef-cc__inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+}
+
+.mef-cc__text {
+    flex: 1 1 380px;
+    margin: 0;
+}
+
+.mef-cc__text a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.mef-cc__text a:hover,
+.mef-cc__text a:focus {
+    color: #fff;
+    opacity: .8;
+}
+
+.mef-cc__actions {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+.mef-cc__btn {
+    /* Same padding, same font size, same weight for both choices. */
+    min-width: 132px;
+    padding: 11px 20px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    background: transparent;
+    color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .18s ease, color .18s ease;
+}
+
+.mef-cc__btn:hover,
+.mef-cc__btn:focus-visible {
+    background: #fff;
+    color: #111;
+}
+
+.mef-cc__btn:focus-visible {
+    outline: 3px solid #7fb2ff;
+    outline-offset: 2px;
+}
+
+@media (max-width: 575px) {
+    #mef-cc {
+        padding: 18px 16px;
+    }
+
+    .mef-cc__inner {
+        gap: 14px;
+    }
+
+    .mef-cc__actions {
+        width: 100%;
+    }
+
+    .mef-cc__btn {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+}
+
+/* Trigger used on the cookie policy pages to reopen the banner. */
+.mef-cc-reopen {
+    display: inline-block;
+    margin: 6px 0 14px;
+    padding: 10px 18px;
+    border: 2px solid #111;
+    border-radius: 3px;
+    background: transparent;
+    color: #111;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.mef-cc-reopen:hover,
+.mef-cc-reopen:focus-visible {
+    background: #111;
+    color: #fff;
+}
+
+/* Click-to-load placeholder for the embedded Google map.
+
+   The map is third-party content: loading it sends the visitor's IP to Google
+   before they have agreed to anything. It stays behind an explicit click
+   rather than behind the banner's accept button, because the banner only asks
+   about analytics and a generic "accept" should not be read as covering this
+   too. */
+
+.mef-map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 450px;
+    padding: 30px 22px;
+    text-align: center;
+    background: #f2f5f5;
+    border: 1px solid #dde3e4;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.mef-map__text {
+    max-width: 520px;
+    margin: 0;
+    color: #33474a;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.mef-map__btn {
+    padding: 12px 24px;
+    border: 2px solid #111;
+    border-radius: 3px;
+    background: transparent;
+    color: #111;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background .18s ease, color .18s ease;
+}
+
+.mef-map__btn:hover,
+.mef-map__btn:focus-visible {
+    background: #111;
+    color: #fff;
+}
+
+.mef-map__btn:focus-visible {
+    outline: 3px solid #7fb2ff;
+    outline-offset: 2px;
+}
+
+.mef-map__alt {
+    margin: 0;
+    font-size: 13px;
+}
+
+.mef-map__alt a {
+    color: #33474a;
+    text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+    .mef-map {
+        min-height: 320px;
+        padding: 24px 16px;
+    }
+}

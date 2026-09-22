@@ -35,41 +35,40 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css?v=3" />
         <link rel="stylesheet" type="text/css" href="/css/responsive.css?v=3" />
     
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJSPVHTFM"></script>
+				<!-- Google Consent Mode v2.
+		     Analytics storage is denied before gtag.js is requested, so no analytics
+		     cookie exists until the visitor accepts in the banner. A stored
+		     acceptance is applied right here, so returning visitors are measured
+		     from their first page view instead of the second. -->
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
+		  gtag('consent', 'default', {
+		    'ad_storage': 'denied',
+		    'ad_user_data': 'denied',
+		    'ad_personalization': 'denied',
+		    'analytics_storage': 'denied',
+		    'functionality_storage': 'granted',
+		    'security_storage': 'granted',
+		    'wait_for_update': 500
+		  });
+		  try {
+		    if (window.localStorage.getItem('mef-cookie-consent') === 'granted') {
+		      gtag('consent', 'update', {'analytics_storage': 'granted'});
+		    }
+		  } catch (e) {}
+		</script>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJSPVHTFM"></script>
+		<script>
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-7NJSPVHTFM');
 		</script>
-		
-		<!-- Aviso cookies pop up -->
-		<link rel="stylesheet" href="https://pdcc.gdpr.es/pdcc.min.css">
-		<script charset="utf-8" src="https://pdcc.gdpr.es/pdcc.min.js"></script>
-		<script type="text/javascript">
-		PDCookieConsent.config({
-		  "brand": {
-			"dev" : true,
-			"name": "MAR ESCOLANO FISIOTERAPIA",
-			"url" : "https://www.marescolanofisioterapia.com",
-			"websiteOwner" : ""
-		  },
-		  "cookiePolicyLink": "https://www.marescolanofisioterapia.com/politica-cookies.html",
-		  "hideModalIn": [""],
-		  "styles": {
-			"primaryButton": {
-			  "bgColor" : "#A1FFA1",
-			  "txtColor": "#036900"
-			},
-			"secondaryButton": {
-			  "bgColor" : "#EEEEEE",
-			  "txtColor": "#333333"
-			}
-		  }
-		});
-		</script>
+
+		<!-- Cookie consent banner -->
+		<link rel="stylesheet" type="text/css" href="/css/cookie-consent.css">
             <!-- Legal pages carry no search value and would only dilute the crawl budget.
              "follow" keeps the internal links crawlable. -->
         <meta name="robots" content="noindex, follow">
@@ -209,9 +208,9 @@
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Qué es una cookie</h2>
                         <p class="text-medium" style="line-height:28px;">Una cookie es un pequeño archivo de texto que un sitio web guarda en su dispositivo cuando usted lo visita. Sirve para recordar información sobre su visita, como el idioma elegido, o para medir de forma agregada cómo se usa el sitio.</p><p class="text-medium" style="line-height:28px;">Las cookies técnicas son imprescindibles para que la web funcione y no requieren su consentimiento. El resto —analíticas, de personalización o publicitarias— solo pueden instalarse si usted las acepta.</p>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Qué cookies utiliza este sitio</h2>
-                        <p class="text-medium" style="line-height:28px;">Este sitio utiliza las siguientes cookies:</p><div style="overflow-x:auto;"><table class="text-medium" style="width:100%;border-collapse:collapse;line-height:24px;margin:14px 0;"><thead><tr><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Cookie</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Tipo</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Titular</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Finalidad</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Duración</th></tr></thead><tbody><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Consentimiento de cookies</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Técnica (necesaria)</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Este sitio</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Recordar qué ha aceptado o rechazado para no volver a preguntárselo</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">1 año</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Distinguir usuarios de forma anónima para medir el uso del sitio</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 años</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga_&lt;ID&gt;</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Mantener el estado de la sesión de analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 años</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google Maps</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Terceros</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Mostrar el mapa incrustado con la ubicación de la clínica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Según la política de Google</td></tr></tbody></table></div><p class="text-medium" style="line-height:28px;">No utilizamos cookies publicitarias ni de elaboración de perfiles comerciales.</p>
+                        <p class="text-medium" style="line-height:28px;">Este sitio utiliza las siguientes cookies:</p><div style="overflow-x:auto;"><table class="text-medium" style="width:100%;border-collapse:collapse;line-height:24px;margin:14px 0;"><thead><tr><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Cookie</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Tipo</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Titular</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Finalidad</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Duración</th></tr></thead><tbody><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Preferencia de consentimiento</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Almacenamiento local (necesario)</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Este sitio</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Recordar en su navegador qué ha aceptado o rechazado, para no volver a preguntárselo. No es una cookie: no se envía a ningún servidor</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Hasta que borre los datos del navegador</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Distinguir usuarios de forma anónima para medir el uso del sitio</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 años</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga_&lt;ID&gt;</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Mantener el estado de la sesión de analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 años</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google Maps</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Terceros</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Mostrar el mapa con la ubicación de la clínica. No se carga con la página: solo si usted pulsa el botón de ver el mapa</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Según la política de Google</td></tr></tbody></table></div><p class="text-medium" style="line-height:28px;">No utilizamos cookies publicitarias ni de elaboración de perfiles comerciales.</p>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Cómo dar o retirar su consentimiento</h2>
-                        <p class="text-medium" style="line-height:28px;">Al entrar por primera vez en el sitio aparece un aviso que le permite <strong>aceptar</strong> o <strong>rechazar</strong> las cookies no necesarias. Rechazarlas es tan sencillo como aceptarlas, y si las rechaza la web sigue funcionando con normalidad.</p><p class="text-medium" style="line-height:28px;">Puede cambiar de opinión cuando quiera: vuelva a abrir el panel de configuración de cookies desde el aviso y modifique su elección. Retirar el consentimiento no afecta a la licitud del tratamiento realizado antes de la retirada.</p>
+                        <p class="text-medium" style="line-height:28px;">Al entrar por primera vez en el sitio aparece un aviso que le permite <strong>aceptar</strong> o <strong>rechazar</strong> las cookies no necesarias. Rechazarlas es tan sencillo como aceptarlas, y si las rechaza la web sigue funcionando con normalidad.</p><p class="text-medium" style="line-height:28px;">Puede cambiar de opinión cuando quiera. Este botón vuelve a abrir el aviso de cookies para que modifique su elección:</p><button type="button" class="mef-cc-reopen" data-cookie-settings>Cambiar mi elección</button><p class="text-medium" style="line-height:28px;">Retirar el consentimiento no afecta a la licitud del tratamiento realizado antes de la retirada.</p>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Cómo gestionarlas desde su navegador</h2>
                         <p class="text-medium" style="line-height:28px;">También puede bloquear o eliminar las cookies desde la configuración de su navegador. Tenga en cuenta que si bloquea todas las cookies, incluidas las técnicas, algunas partes del sitio podrían dejar de funcionar:</p><ul class="text-medium" style="line-height:28px;padding-left:20px;"><li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li><li><a href="https://support.mozilla.org/es/kb/Borrar%20cookies" target="_blank" rel="noopener">Mozilla Firefox</a></li><li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li><li><a href="https://support.microsoft.com/es-es/microsoft-edge" target="_blank" rel="noopener">Microsoft Edge</a></li></ul>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Transferencias internacionales</h2>
@@ -342,5 +341,6 @@
         <script type="text/javascript" src="/js/main.js"></script>
         <script type="text/javascript" src="/js/site-search.js"></script>
         <script type="text/javascript" src="/js/lang-switch.js"></script>
+        <script type="text/javascript" src="/js/cookie-consent.js"></script>
     </body>
 </html>

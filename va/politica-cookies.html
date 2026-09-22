@@ -35,41 +35,40 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css?v=3" />
         <link rel="stylesheet" type="text/css" href="/css/responsive.css?v=3" />
     
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJSPVHTFM"></script>
+				<!-- Google Consent Mode v2.
+		     Analytics storage is denied before gtag.js is requested, so no analytics
+		     cookie exists until the visitor accepts in the banner. A stored
+		     acceptance is applied right here, so returning visitors are measured
+		     from their first page view instead of the second. -->
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
+		  gtag('consent', 'default', {
+		    'ad_storage': 'denied',
+		    'ad_user_data': 'denied',
+		    'ad_personalization': 'denied',
+		    'analytics_storage': 'denied',
+		    'functionality_storage': 'granted',
+		    'security_storage': 'granted',
+		    'wait_for_update': 500
+		  });
+		  try {
+		    if (window.localStorage.getItem('mef-cookie-consent') === 'granted') {
+		      gtag('consent', 'update', {'analytics_storage': 'granted'});
+		    }
+		  } catch (e) {}
+		</script>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJSPVHTFM"></script>
+		<script>
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-7NJSPVHTFM');
 		</script>
-		
-		<!-- Aviso cookies pop up -->
-		<link rel="stylesheet" href="https://pdcc.gdpr.es/pdcc.min.css">
-		<script charset="utf-8" src="https://pdcc.gdpr.es/pdcc.min.js"></script>
-		<script type="text/javascript">
-		PDCookieConsent.config({
-		  "brand": {
-			"dev" : true,
-			"name": "MAR ESCOLANO FISIOTERAPIA",
-			"url" : "https://www.marescolanofisioterapia.com",
-			"websiteOwner" : ""
-		  },
-		  "cookiePolicyLink": "https://www.marescolanofisioterapia.com/politica-cookies.html",
-		  "hideModalIn": [""],
-		  "styles": {
-			"primaryButton": {
-			  "bgColor" : "#A1FFA1",
-			  "txtColor": "#036900"
-			},
-			"secondaryButton": {
-			  "bgColor" : "#EEEEEE",
-			  "txtColor": "#333333"
-			}
-		  }
-		});
-		</script>
+
+		<!-- Cookie consent banner -->
+		<link rel="stylesheet" type="text/css" href="/css/cookie-consent.css">
             <!-- Legal pages carry no search value and would only dilute the crawl budget.
              "follow" keeps the internal links crawlable. -->
         <meta name="robots" content="noindex, follow">
@@ -209,9 +208,9 @@
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Què és una galeta</h2>
                         <p class="text-medium" style="line-height:28px;">Una galeta (cookie) és un xicotet arxiu de text que un lloc web guarda al seu dispositiu quan vosté el visita. Serveix per a recordar informació sobre la visita, com l'idioma triat, o per a mesurar de manera agregada com s'usa el lloc.</p><p class="text-medium" style="line-height:28px;">Les galetes tècniques són imprescindibles perquè la web funcione i no requereixen el seu consentiment. La resta —analítiques, de personalització o publicitàries— només poden instal·lar-se si vosté les accepta.</p>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Quines galetes utilitza aquest lloc</h2>
-                        <p class="text-medium" style="line-height:28px;">Aquest lloc utilitza les galetes següents:</p><div style="overflow-x:auto;"><table class="text-medium" style="width:100%;border-collapse:collapse;line-height:24px;margin:14px 0;"><thead><tr><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Galeta</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Tipus</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Titular</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Finalitat</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Durada</th></tr></thead><tbody><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Consentiment de galetes</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Tècnica (necessària)</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Aquest lloc</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Recordar què ha acceptat o rebutjat per a no tornar a preguntar-ho</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">1 any</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Distingir usuaris de manera anònima per a mesurar l'ús del lloc</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 anys</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga_&lt;ID&gt;</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Mantindre l'estat de la sessió d'analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 anys</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google Maps</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Tercers</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Mostrar el mapa incrustat amb la ubicació de la clínica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Segons la política de Google</td></tr></tbody></table></div><p class="text-medium" style="line-height:28px;">No utilitzem galetes publicitàries ni d'elaboració de perfils comercials.</p>
+                        <p class="text-medium" style="line-height:28px;">Aquest lloc utilitza les galetes següents:</p><div style="overflow-x:auto;"><table class="text-medium" style="width:100%;border-collapse:collapse;line-height:24px;margin:14px 0;"><thead><tr><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Galeta</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Tipus</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Titular</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Finalitat</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Durada</th></tr></thead><tbody><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Preferència de consentiment</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Emmagatzematge local (necessari)</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Aquest lloc</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Recordar en el seu navegador què ha acceptat o rebutjat, per a no tornar a preguntar-ho. No és una galeta: no s'envia a cap servidor</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Fins que esborre les dades del navegador</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Distingir usuaris de manera anònima per a mesurar l'ús del lloc</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 anys</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga_&lt;ID&gt;</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Mantindre l'estat de la sessió d'analítica</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 anys</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google Maps</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Tercers</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Mostrar el mapa amb la ubicació de la clínica. No es carrega amb la pàgina: només si vosté prem el botó de veure el mapa</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Segons la política de Google</td></tr></tbody></table></div><p class="text-medium" style="line-height:28px;">No utilitzem galetes publicitàries ni d'elaboració de perfils comercials.</p>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Com donar o retirar el consentiment</h2>
-                        <p class="text-medium" style="line-height:28px;">En entrar per primera vegada al lloc apareix un avís que li permet <strong>acceptar</strong> o <strong>rebutjar</strong> les galetes no necessàries. Rebutjar-les és tan senzill com acceptar-les, i si les rebutja la web continua funcionant amb normalitat.</p><p class="text-medium" style="line-height:28px;">Pot canviar d'opinió quan vulga: òbriga de nou el panell de configuració de galetes des de l'avís i modifique la seua elecció. Retirar el consentiment no afecta la licitud del tractament realitzat abans de la retirada.</p>
+                        <p class="text-medium" style="line-height:28px;">En entrar per primera vegada al lloc apareix un avís que li permet <strong>acceptar</strong> o <strong>rebutjar</strong> les galetes no necessàries. Rebutjar-les és tan senzill com acceptar-les, i si les rebutja la web continua funcionant amb normalitat.</p><p class="text-medium" style="line-height:28px;">Pot canviar d'opinió quan vulga. Aquest botó torna a obrir l'avís de galetes perquè modifique la seua elecció:</p><button type="button" class="mef-cc-reopen" data-cookie-settings>Canviar la meua elecció</button><p class="text-medium" style="line-height:28px;">Retirar el consentiment no afecta la licitud del tractament realitzat abans de la retirada.</p>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Com gestionar-les des del navegador</h2>
                         <p class="text-medium" style="line-height:28px;">També pot bloquejar o eliminar les galetes des de la configuració del navegador. Tinga en compte que si bloqueja totes les galetes, incloses les tècniques, algunes parts del lloc podrien deixar de funcionar:</p><ul class="text-medium" style="line-height:28px;padding-left:20px;"><li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li><li><a href="https://support.mozilla.org/es/kb/Borrar%20cookies" target="_blank" rel="noopener">Mozilla Firefox</a></li><li><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li><li><a href="https://support.microsoft.com/es-es/microsoft-edge" target="_blank" rel="noopener">Microsoft Edge</a></li></ul>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Transferències internacionals</h2>
@@ -342,5 +341,6 @@
         <script type="text/javascript" src="/js/main.js"></script>
         <script type="text/javascript" src="/js/site-search.js"></script>
         <script type="text/javascript" src="/js/lang-switch.js"></script>
+        <script type="text/javascript" src="/js/cookie-consent.js"></script>
     </body>
 </html>

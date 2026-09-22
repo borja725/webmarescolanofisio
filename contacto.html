@@ -35,41 +35,40 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css?v=3" />
         <link rel="stylesheet" type="text/css" href="/css/responsive.css?v=3" />
     
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJSPVHTFM"></script>
+				<!-- Google Consent Mode v2.
+		     Analytics storage is denied before gtag.js is requested, so no analytics
+		     cookie exists until the visitor accepts in the banner. A stored
+		     acceptance is applied right here, so returning visitors are measured
+		     from their first page view instead of the second. -->
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
+		  gtag('consent', 'default', {
+		    'ad_storage': 'denied',
+		    'ad_user_data': 'denied',
+		    'ad_personalization': 'denied',
+		    'analytics_storage': 'denied',
+		    'functionality_storage': 'granted',
+		    'security_storage': 'granted',
+		    'wait_for_update': 500
+		  });
+		  try {
+		    if (window.localStorage.getItem('mef-cookie-consent') === 'granted') {
+		      gtag('consent', 'update', {'analytics_storage': 'granted'});
+		    }
+		  } catch (e) {}
+		</script>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJSPVHTFM"></script>
+		<script>
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-7NJSPVHTFM');
 		</script>
-		
-		<!-- Aviso cookies pop up -->
-		<link rel="stylesheet" href="https://pdcc.gdpr.es/pdcc.min.css">
-		<script charset="utf-8" src="https://pdcc.gdpr.es/pdcc.min.js"></script>
-		<script type="text/javascript">
-		PDCookieConsent.config({
-		  "brand": {
-			"dev" : true,
-			"name": "MAR ESCOLANO FISIOTERAPIA",
-			"url" : "https://www.marescolanofisioterapia.com",
-			"websiteOwner" : ""
-		  },
-		  "cookiePolicyLink": "https://www.marescolanofisioterapia.com/politica-cookies.html",
-		  "hideModalIn": [""],
-		  "styles": {
-			"primaryButton": {
-			  "bgColor" : "#A1FFA1",
-			  "txtColor": "#036900"
-			},
-			"secondaryButton": {
-			  "bgColor" : "#EEEEEE",
-			  "txtColor": "#333333"
-			}
-		  }
-		});
-		</script>
+
+		<!-- Cookie consent banner -->
+		<link rel="stylesheet" type="text/css" href="/css/cookie-consent.css">
    	<style>
 		   #whatsapp-button, #call-button {
             position: fixed;
@@ -372,7 +371,11 @@
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-12">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1551.139872362104!2d-0.18117983041579308!3d38.96327986856794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e9258fbf3b01%3A0x95de79f90e84a512!2sMar%20Escolano%20Fisioterapia!5e0!3m2!1ses!2ses!4v1691143552439!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="mef-map" data-map-src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1551.139872362104!2d-0.18117983041579308!3d38.96327986856794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61e9258fbf3b01%3A0x95de79f90e84a512!2sMar%20Escolano%20Fisioterapia!5e0!3m2!1ses!2ses!4v1691143552439!5m2!1ses!2ses" data-map-height="450">
+                            <noscript>
+                                <p class="mef-map__text">El mapa lo proporciona Google y no se carga automáticamente. Activa JavaScript o <a href="https://www.google.com/maps/search/?api=1&amp;query=Mar+Escolano+Fisioterapia+Gandia" target="_blank" rel="noopener">abre la ubicación en Google Maps</a>.</p>
+                            </noscript>
+                        </div>
 					</div>
                 </div>
             </div>
@@ -497,5 +500,6 @@
         <script type="text/javascript" src="/js/main.js"></script>
         <script type="text/javascript" src="/js/site-search.js"></script>
         <script type="text/javascript" src="/js/lang-switch.js"></script>
+        <script type="text/javascript" src="/js/cookie-consent.js"></script>
     </body>
 </html>
