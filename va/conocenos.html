@@ -79,11 +79,11 @@
         }
 
         #whatsapp-button {
-            bottom: 100px;
+            bottom: 170px;
         }
 
         #call-button {
-            bottom: 20px;
+            bottom: 100px;
         }
 
         #whatsapp-button a, #call-button a {
@@ -116,16 +116,9 @@
 
 		document.addEventListener("DOMContentLoaded", function() {
     let whatsappButton = document.getElementById("whatsapp-button");
-    let whatsappLink = document.getElementById("whatsapp-link");
     let callButton = document.getElementById("call-button");
-    let callLink = document.getElementById("call-link");
-
-    // Números codificados en Base64 por seguridad
-    let phoneNumber = atob("MzQ2MjEyNzkwMjk="); // Reemplázalo con tu número en Base64
-    let callNumber = atob("MzQ2MjEyNzkwMjk="); // Reemplázalo con el mismo número o diferente
-
-    whatsappLink.href = "https://wa.me/" + phoneNumber;
-    callLink.href = "tel:" + callNumber;
+    // The hrefs live in the markup, so the buttons work even if this
+    // script never runs. All it does here is reveal them on scroll.
 
     window.addEventListener("scroll", function() {
         if (window.scrollY > 100) {
@@ -145,21 +138,15 @@
 		
 		<!-- Botón flotante de WhatsApp -->
 <div id="whatsapp-button">
-    <a href="#" id="whatsapp-link" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
-    </a>
-</div>
-<!-- Botón de WhatsApp -->
-<div id="whatsapp-button">
-    <a href="#" id="whatsapp-link" target="_blank">
+    <a href="https://wa.me/34621279029" id="whatsapp-link" target="_blank" rel="noopener">
         <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
     </a>
 </div>
 
 <!-- Botón de Llamar -->
 <div id="call-button">
-    <a href="#" id="call-link">
-        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Llamar">
+    <a href="tel:+34621279029" id="call-link">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Trucar">
     </a>
 </div>
         <!-- start header -->
