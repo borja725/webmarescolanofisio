@@ -35,41 +35,40 @@
         <link rel="stylesheet" type="text/css" href="/css/style.css?v=3" />
         <link rel="stylesheet" type="text/css" href="/css/responsive.css?v=3" />
     
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJSPVHTFM"></script>
+				<!-- Google Consent Mode v2.
+		     Analytics storage is denied before gtag.js is requested, so no analytics
+		     cookie exists until the visitor accepts in the banner. A stored
+		     acceptance is applied right here, so returning visitors are measured
+		     from their first page view instead of the second. -->
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
+		  gtag('consent', 'default', {
+		    'ad_storage': 'denied',
+		    'ad_user_data': 'denied',
+		    'ad_personalization': 'denied',
+		    'analytics_storage': 'denied',
+		    'functionality_storage': 'granted',
+		    'security_storage': 'granted',
+		    'wait_for_update': 500
+		  });
+		  try {
+		    if (window.localStorage.getItem('mef-cookie-consent') === 'granted') {
+		      gtag('consent', 'update', {'analytics_storage': 'granted'});
+		    }
+		  } catch (e) {}
+		</script>
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NJSPVHTFM"></script>
+		<script>
 		  gtag('js', new Date());
 
 		  gtag('config', 'G-7NJSPVHTFM');
 		</script>
-		
-		<!-- Aviso cookies pop up -->
-		<link rel="stylesheet" href="https://pdcc.gdpr.es/pdcc.min.css">
-		<script charset="utf-8" src="https://pdcc.gdpr.es/pdcc.min.js"></script>
-		<script type="text/javascript">
-		PDCookieConsent.config({
-		  "brand": {
-			"dev" : true,
-			"name": "MAR ESCOLANO FISIOTERAPIA",
-			"url" : "https://www.marescolanofisioterapia.com",
-			"websiteOwner" : ""
-		  },
-		  "cookiePolicyLink": "https://www.marescolanofisioterapia.com/politica-cookies.html",
-		  "hideModalIn": [""],
-		  "styles": {
-			"primaryButton": {
-			  "bgColor" : "#A1FFA1",
-			  "txtColor": "#036900"
-			},
-			"secondaryButton": {
-			  "bgColor" : "#EEEEEE",
-			  "txtColor": "#333333"
-			}
-		  }
-		});
-		</script>
+
+		<!-- Cookie consent banner -->
+		<link rel="stylesheet" type="text/css" href="/css/cookie-consent.css">
             <!-- Legal pages carry no search value and would only dilute the crawl budget.
              "follow" keeps the internal links crawlable. -->
         <meta name="robots" content="noindex, follow">
@@ -211,7 +210,7 @@
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Which cookies this site uses</h2>
                         <p class="text-medium" style="line-height:28px;">This site uses the following cookies:</p><div style="overflow-x:auto;"><table class="text-medium" style="width:100%;border-collapse:collapse;line-height:24px;margin:14px 0;"><thead><tr><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Cookie</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Type</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Set by</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Purpose</th><th style="border:1px solid #ddd;padding:8px 10px;background:#f4f6f6;text-align:left;font-weight:600;">Duration</th></tr></thead><tbody><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Cookie consent</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Technical (necessary)</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">This site</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Remember what you accepted or rejected so you are not asked again</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">1 year</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analytics</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Distinguish users anonymously in order to measure site usage</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 years</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">_ga_&lt;ID&gt;</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Analytics</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Maintain analytics session state</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">2 years</td></tr><tr><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google Maps</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Third party</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Google</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Display the embedded map showing the clinic location</td><td style="border:1px solid #ddd;padding:8px 10px;vertical-align:top;">Per Google policy</td></tr></tbody></table></div><p class="text-medium" style="line-height:28px;">We do not use advertising cookies or cookies for commercial profiling.</p>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Giving or withdrawing your consent</h2>
-                        <p class="text-medium" style="line-height:28px;">The first time you enter the site, a notice lets you <strong>accept</strong> or <strong>reject</strong> non-essential cookies. Rejecting is as easy as accepting, and if you reject them the site continues to work normally.</p><p class="text-medium" style="line-height:28px;">You can change your mind at any time: reopen the cookie settings panel from the notice and change your choice. Withdrawing consent does not affect the lawfulness of processing carried out before the withdrawal.</p>
+                        <p class="text-medium" style="line-height:28px;">The first time you enter the site, a notice lets you <strong>accept</strong> or <strong>reject</strong> non-essential cookies. Rejecting is as easy as accepting, and if you reject them the site continues to work normally.</p><p class="text-medium" style="line-height:28px;">You can change your mind at any time. This button reopens the cookie notice so you can change your choice:</p><button type="button" class="mef-cc-reopen" data-cookie-settings>Change my choice</button><p class="text-medium" style="line-height:28px;">Withdrawing consent does not affect the lawfulness of processing carried out before the withdrawal.</p>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">Managing cookies in your browser</h2>
                         <p class="text-medium" style="line-height:28px;">You can also block or delete cookies from your browser settings. Note that if you block all cookies, including technical ones, parts of the site may stop working:</p><ul class="text-medium" style="line-height:28px;padding-left:20px;"><li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li><li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox" target="_blank" rel="noopener">Mozilla Firefox</a></li><li><a href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li><li><a href="https://support.microsoft.com/en-gb/microsoft-edge" target="_blank" rel="noopener">Microsoft Edge</a></li></ul>
                         <h2 class="alt-font text-extra-dark-gray font-weight-600 margin-20px-bottom" style="font-size:22px;line-height:30px;margin-top:38px;">International transfers</h2>
@@ -342,5 +341,6 @@
         <script type="text/javascript" src="/js/main.js"></script>
         <script type="text/javascript" src="/js/site-search.js"></script>
         <script type="text/javascript" src="/js/lang-switch.js"></script>
+        <script type="text/javascript" src="/js/cookie-consent.js"></script>
     </body>
 </html>
