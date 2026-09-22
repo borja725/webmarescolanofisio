@@ -1,0 +1,19 @@
+# robots.txt - marescolanofisioterapia.com
+#
+# Pages carrying <meta name="robots" content="noindex"> - the legal pages and the
+# thank-you pages - are deliberately NOT listed here. Blocking a URL stops Google
+# fetching it, so it would never read the noindex, and the address could still be
+# indexed without a description. Crawlable plus noindex is what actually removes
+# a page from the results.
+
+User-agent: *
+Allow: /
+
+# Not content: project files that the deploy serves because the whole repository
+# is published, and the theme's asset directory.
+Disallow: /README.md
+Disallow: /serve.py
+Disallow: /wrangler.toml
+Disallow: /revolution/
+
+Sitemap: https://marescolanofisioterapia.com/sitemap.xml
