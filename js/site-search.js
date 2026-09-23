@@ -82,24 +82,6 @@
             }
         },
         {
-            url: 'servicios/nutricion.html',
-            title: { es: 'Nutrición', va: 'Nutrició', en: 'Nutrition' },
-            keywords: {
-                es: ['nutricion', 'dieta', 'alimentacion', 'nutricionista', 'dietista', 'peso'],
-                va: ['nutricio', 'dieta', 'alimentacio', 'nutricionista', 'dietista', 'pes'],
-                en: ['nutrition', 'diet', 'nutritionist', 'dietitian', 'weight', 'eating']
-            }
-        },
-        {
-            url: 'servicios/psicologia.html',
-            title: { es: 'Psicología', va: 'Psicologia', en: 'Psychology' },
-            keywords: {
-                es: ['psicologia', 'psicologo', 'psicologa', 'salud mental', 'ansiedad', 'terapia psicologica'],
-                va: ['psicologia', 'psicoleg', 'psicologa', 'salut mental', 'ansietat', 'terapia psicologica'],
-                en: ['psychology', 'psychologist', 'mental health', 'anxiety', 'counselling', 'therapy']
-            }
-        },
-        {
             url: 'tratamientos.html',
             title: { es: 'Tratamientos', va: 'Tractaments', en: 'Treatments' },
             keywords: {

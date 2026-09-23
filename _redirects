@@ -1,0 +1,21 @@
+# Retired services.
+#
+# The clinic no longer offers nutrición or psicología. The pages are gone,
+# but the addresses were indexed and may still be linked from elsewhere, so
+# they point at the list of services that are actually on offer, in the
+# visitor's own language, rather than at an error page.
+
+/servicios/nutricion        /servicios  301
+/servicios/nutricion.html   /servicios  301
+/servicios/psicologia        /servicios  301
+/servicios/psicologia.html   /servicios  301
+
+/va/servicios/nutricion        /va/servicios  301
+/va/servicios/nutricion.html   /va/servicios  301
+/va/servicios/psicologia        /va/servicios  301
+/va/servicios/psicologia.html   /va/servicios  301
+
+/en/servicios/nutricion        /en/servicios  301
+/en/servicios/nutricion.html   /en/servicios  301
+/en/servicios/psicologia        /en/servicios  301
+/en/servicios/psicologia.html   /en/servicios  301
