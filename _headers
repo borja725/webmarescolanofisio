@@ -6,6 +6,34 @@
 # deploy is visible immediately. Pages are also served at extensionless URLs
 # (/tratamientos/diatermia), so a /*.html rule would never match them.
 
+# ---------------------------------------------------------------- security
+# The site answered on http:// with a 200 and no redirect, so anything a
+# patient typed into the contact form could be read in transit. Cloudflare's
+# "Always Use HTTPS" closes that door; these headers cover what a response can
+# do on its own.
+#
+# Strict-Transport-Security starts at one week on purpose. Browsers take it
+# seriously: once they have seen it they will refuse http:// for this domain
+# for the whole period, and if a certificate ever fails they cannot be talked
+# out of it. A week is long enough to be worth having and short enough to
+# recover from. Raise it to 31536000 after a few uneventful weeks, and only
+# add includeSubDomains once every subdomain is known to serve HTTPS.
+# Do not add preload: getting back off that list takes months.
+#
+# There is no Content-Security-Policy here, deliberately. The pages carry 3483
+# inline style attributes, 183 inline scripts and 18 style blocks, so any
+# policy that did not break the site would need unsafe-inline for both scripts
+# and styles - which is most of what a CSP is for. A CSP is worth adding after
+# that inline code is moved out, not before, because a permissive one mostly
+# buys the feeling of being protected.
+/*
+  Strict-Transport-Security: max-age=604800
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), payment=(), usb=()
+
+# ---------------------------------------------------------------- caching
 # Stylesheets are cache-busted with ?v=N in every <link>.
 # Bump that number whenever style.css or responsive.css changes.
 /css/*
