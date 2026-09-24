@@ -1,0 +1,52 @@
+/* ---------------------------------------------------------------------------
+   Styles that belong to this site rather than to the purchased theme.
+   Kept in their own file so a theme file can be replaced without losing them,
+   and so no cache-busting query has to be bumped on the theme's own sheets.
+
+   M-11 - heading sizes after fixing the hierarchy.
+
+   Section headings across the site were marked up as <h5> and <h6> because
+   those were the sizes the designer wanted, not because they were the fifth
+   or sixth level of anything. Every page therefore jumped straight from <h1>
+   to <h6>, which breaks the outline a screen reader user navigates by - the
+   same way a sighted reader skims with their eyes - and leaves search engines
+   guessing which block is which.
+
+   Those headings are now <h2>, which is what they mean. These classes give
+   them back the exact size they had before, at every breakpoint, so nothing
+   changes on screen. The numbers are copied from style.css and responsive.css
+   and must be kept in step with them.
+
+              default   <=1199px  <=991px   <=767px
+     was h5   29/36     27/32     24/30     20/25
+     was h6   25/30     22/27     22/26     18/23
+
+   The h2. prefix is deliberate: it outranks the theme's bare h2 rule at every
+   breakpoint, so load order cannot undo it.
+--------------------------------------------------------------------------- */
+
+h2.mef-size-h5 { font-size: 29px; line-height: 36px; }
+h2.mef-size-h6 { font-size: 25px; line-height: 30px; }
+
+@media (max-width: 1199px) {
+    h2.mef-size-h5 { font-size: 27px; line-height: 32px; }
+    h2.mef-size-h6 { font-size: 22px; line-height: 27px; }
+}
+
+@media (max-width: 991px) {
+    h2.mef-size-h5 { font-size: 24px; line-height: 30px; }
+    h2.mef-size-h6 { font-size: 22px; line-height: 26px; }
+}
+
+@media (max-width: 767px) {
+    h2.mef-size-h5 { font-size: 20px; line-height: 25px; }
+    h2.mef-size-h6 { font-size: 18px; line-height: 23px; }
+}
+
+/* The thank-you page listed the clinic's address inside an <h6>. It is contact
+   information, not a heading, so it is an <address> now - which browsers
+   italicise by default and the theme never styled. */
+address.mef-contact {
+    font-style: normal;
+    margin: 0 0 30px;
+}
