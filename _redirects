@@ -19,3 +19,13 @@
 /en/servicios/nutricion.html   /en/servicios  301
 /en/servicios/psicologia        /en/servicios  301
 /en/servicios/psicologia.html   /en/servicios  301
+
+# Pelvic floor had two pages holding the same text. The one under
+# tratamientos survives; this address keeps working and points there.
+
+/servicios/suelo-pelvico        /tratamientos/suelo-pelvico  301
+/servicios/suelo-pelvico.html   /tratamientos/suelo-pelvico  301
+/va/servicios/suelo-pelvico        /va/tratamientos/suelo-pelvico  301
+/va/servicios/suelo-pelvico.html   /va/tratamientos/suelo-pelvico  301
+/en/servicios/suelo-pelvico        /en/tratamientos/suelo-pelvico  301
+/en/servicios/suelo-pelvico.html   /en/tratamientos/suelo-pelvico  301

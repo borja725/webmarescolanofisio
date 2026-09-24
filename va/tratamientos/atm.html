@@ -4,12 +4,9 @@
         <!-- Preferred address for this page. Cloudflare already redirects
              /page.html, /page/ and the www host here, so this only has to
              state the destination, not police the variants. -->
-        <link rel="canonical" href="https://marescolanofisioterapia.com/va/tratamientos/atm">
-        <!-- language alternates -->
-        <link rel="alternate" hreflang="es-ES" href="https://marescolanofisioterapia.com/tratamientos/atm" />
-        <link rel="alternate" hreflang="ca-ES" href="https://marescolanofisioterapia.com/va/tratamientos/atm" />
-        <link rel="alternate" hreflang="en" href="https://marescolanofisioterapia.com/en/tratamientos/atm" />
-        <link rel="alternate" hreflang="x-default" href="https://marescolanofisioterapia.com/tratamientos/atm" />
+        <!-- No hreflang here on purpose: this page defers to /atm via the canonical
+             above, and hreflang only belongs on the page that actually answers. -->
+        <link rel="canonical" href="https://marescolanofisioterapia.com/va/atm">
         <!-- title -->
         <title>Tractament de la ATM a Gandia | Bruxisme i bloqueig</title>
         <meta charset="utf-8">
@@ -73,19 +70,6 @@
 
 		<!-- Cookie consent banner -->
 		<link rel="stylesheet" type="text/css" href="/css/cookie-consent.css">
-        <!-- This treatment, tied to the clinic above by @id. -->
-        <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "MedicalTherapy",
-          "name": "Fisioteràpia de l'articulació temporomandibular (ATM)",
-          "url": "https://marescolanofisioterapia.com/va/tratamientos/atm",
-          "inLanguage": "ca-ES-valencia",
-          "provider": {
-            "@id": "https://marescolanofisioterapia.com/#clinica"
-          }
-        }
-        </script>
     </head>
 	
     <body>
