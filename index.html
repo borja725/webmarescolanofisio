@@ -392,6 +392,16 @@
           }
         }
         </script>
+        <!-- Open Graph, so a link shared in WhatsApp or Instagram carries a
+             picture, a title and a description instead of a bare address. -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Clínica de Fisioterapia Mar Escolano">
+        <meta property="og:locale" content="es_ES">
+        <meta property="og:title" content="Fisioterapia en Gandia | Clínica Mar Escolano">
+        <meta property="og:description" content="Clínica de fisioterapia y rehabilitación en Gandia. Terapia manual, punción seca, tecarterapia Winback y ecografía. Pide cita en el +34 621 279 029.">
+        <meta property="og:url" content="https://marescolanofisioterapia.com/">
+        <meta property="og:image" content="https://marescolanofisioterapia.com/images/home/slide-5-clinica-mar-escolano-fisioterapia-gandia.jpg">
+        <meta name="twitter:card" content="summary_large_image">
     </head>
 	<script>
 
@@ -430,15 +440,15 @@
     <body>
 		<!-- Botón flotante de WhatsApp -->
 <div id="whatsapp-button">
-    <a href="https://wa.me/34621279029" id="whatsapp-link" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    <a href="https://wa.me/34621279029" id="whatsapp-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true" style="color:#fff;font-size:32px;line-height:40px;"></i>
     </a>
 </div>
 
 <!-- Botón de Llamar -->
 <div id="call-button">
-    <a href="tel:+34621279029" id="call-link">
-        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Llamar">
+    <a href="tel:+34621279029" id="call-link" aria-label="Llamar">
+        <i class="fas fa-phone" aria-hidden="true" style="color:#fff;font-size:28px;line-height:40px;"></i>
     </a>
 </div>
 
@@ -454,7 +464,7 @@
                                 <a href="tel:+34621279029" class="text-link-white-2 line-height-normal" style="margin-right: 17px">
 									<i class="ti-mobile" style="margin-right: 5px"></i> Coger cita
 								</a>
-								<a href="https://goo.gl/maps/8cAe1wz49uhVHwpF6" target="_blank" class="text-link-white-2 line-height-normal" style="margin-right: 11px">
+								<a href="https://www.google.com/maps/search/?api=1&amp;query=Mar+Escolano+Fisioterapia+Gandia" target="_blank" class="text-link-white-2 line-height-normal" style="margin-right: 11px">
 									<i class="ti-location-pin" style="margin-right: 5px"></i> Cómo llegar
 								</a>
 								<a href="contacto.html" class="text-link-white-2 line-height-normal">
@@ -981,7 +991,7 @@
 							<li><a class="text-medium" href="servicios.html">Servicios</a></li>
 							<li><a class="text-medium" href="tratamientos.html">Tratamientos</a></li>
 							<li><a class="text-medium" href="contacto.html">Coger cita</a></li>
-						  <li><a class="text-medium" href="https://goo.gl/maps/8cAe1wz49uhVHwpF6" target="_blank">Cómo llegar</a></li>
+						  <li><a class="text-medium" href="https://www.google.com/maps/search/?api=1&amp;query=Mar+Escolano+Fisioterapia+Gandia" target="_blank">Cómo llegar</a></li>
 						  <li><a class="text-medium" href="aviso-legal.html">Aviso legal</a></li>
 						  <li><a class="text-medium" href="politica-privacidad.html">Política de privacidad</a></li>
 						  <li><a class="text-medium" href="politica-cookies.html">Política de cookies</a></li>
@@ -1002,7 +1012,7 @@
 							C/ Pellers, 24<br>
 							46702 Gandia (Valencia)<br><br>
 
-							<a href="https://goo.gl/maps/8cAe1wz49uhVHwpF6" target="_blank" class="text-medium"><strong style="color: #000; font-weight: 800">Ver en Google Maps</strong></a>
+							<a href="https://www.google.com/maps/search/?api=1&amp;query=Mar+Escolano+Fisioterapia+Gandia" target="_blank" class="text-medium"><strong style="color: #000; font-weight: 800">Ver en Google Maps</strong></a>
 						</p>
 
 						<div class="text-medium"><a href="mailto:marescolanofisio@gmail.com" style="color: #000">Email: marescolanofisio@gmail.com</a></div>
@@ -1024,7 +1034,7 @@
         <!-- end footer -->
         
 		<!-- start scroll to top -->
-        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+        <button type="button" class="scroll-top-arrow" aria-label="Volver arriba" style="border:0;cursor:pointer;"><i class="ti-arrow-up" aria-hidden="true"></i></button>
         <!-- end scroll to top  -->
         
 		<!-- javascript -->

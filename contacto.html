@@ -112,6 +112,16 @@
             height: 40px;
         }
 	</style>
+        <!-- Open Graph, so a link shared in WhatsApp or Instagram carries a
+             picture, a title and a description instead of a bare address. -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Clínica de Fisioterapia Mar Escolano">
+        <meta property="og:locale" content="es_ES">
+        <meta property="og:title" content="Pide cita | Clínica de Fisioterapia Mar Escolano Gandia">
+        <meta property="og:description" content="Pide cita en nuestra clínica de fisioterapia en Gandia, C/ Pellers 24. Teléfono y WhatsApp +34 621 279 029, de lunes a viernes.">
+        <meta property="og:url" content="https://marescolanofisioterapia.com/contacto">
+        <meta property="og:image" content="https://marescolanofisioterapia.com/images/home/slide-5-clinica-mar-escolano-fisioterapia-gandia.jpg">
+        <meta name="twitter:card" content="summary_large_image">
     </head>
 	
     <body>
@@ -141,15 +151,15 @@
 		
 		<!-- Botón flotante de WhatsApp -->
 <div id="whatsapp-button">
-    <a href="https://wa.me/34621279029" id="whatsapp-link" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp">
+    <a href="https://wa.me/34621279029" id="whatsapp-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp" aria-hidden="true" style="color:#fff;font-size:32px;line-height:40px;"></i>
     </a>
 </div>
 
 <!-- Botón de Llamar -->
 <div id="call-button">
-    <a href="tel:+34621279029" id="call-link">
-        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Llamar">
+    <a href="tel:+34621279029" id="call-link" aria-label="Llamar">
+        <i class="fas fa-phone" aria-hidden="true" style="color:#fff;font-size:28px;line-height:40px;"></i>
     </a>
 </div>
         <!-- start header -->
@@ -163,7 +173,7 @@
                                 <a href="tel:+34621279029" class="text-link-white-2 line-height-normal" style="margin-right: 17px">
 									<i class="ti-mobile" style="margin-right: 5px"></i> Coger cita
 								</a>
-								<a href="https://goo.gl/maps/8cAe1wz49uhVHwpF6" target="_blank" class="text-link-white-2 line-height-normal" style="margin-right: 11px">
+								<a href="https://www.google.com/maps/search/?api=1&amp;query=Mar+Escolano+Fisioterapia+Gandia" target="_blank" class="text-link-white-2 line-height-normal" style="margin-right: 11px">
 									<i class="ti-location-pin" style="margin-right: 5px"></i> Cómo llegar
 								</a>
 								<a href="contacto.html" class="text-link-white-2 line-height-normal">
@@ -291,7 +301,7 @@
                         <div class="alt-font text-medium-gray margin-10px-bottom text-uppercase text-small">Contacto</div>
                         <h5 class="alt-font text-extra-dark-gray font-weight-600 margin-25px-bottom">Contacta ahora</h5>
                         <p class="text-medium margin-10px-bottom">
-                            <img src="/images/direccion.png" alt=""> <a href="https://goo.gl/maps/8cAe1wz49uhVHwpF6" target="_blank" style="color: #000">C/ Pellers, 24 - 46702 Gandia (Valencia)</a>
+                            <img src="/images/direccion.png" alt=""> <a href="https://www.google.com/maps/search/?api=1&amp;query=Mar+Escolano+Fisioterapia+Gandia" target="_blank" style="color: #000">C/ Pellers, 24 - 46702 Gandia (Valencia)</a>
                         </p>
                         <p class="text-medium margin-10px-bottom">
                             <img src="/images/phone.png" alt=""> <a href="tel:+34621279029" style="color: #000">+34 621 279 029</a>
@@ -312,23 +322,23 @@
                     <input type="checkbox" name="botcheck" class="hidden" style="display:none;" tabindex="-1" autocomplete="off">
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <input type="text" name="name" id="name" placeholder="Nombre y apellidos" class="big-input" required="">
+                            <label for="name" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Nombre y apellidos</label><input type="text" name="name" id="name" placeholder="Nombre y apellidos" class="big-input" required="">
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono" class="big-input" required="" spellcheck="false" data-ms-editor="true">
+                            <label for="telefono" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Teléfono</label><input type="text" name="telefono" id="telefono" placeholder="Teléfono" class="big-input" required="" spellcheck="false" data-ms-editor="true">
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input type="text" name="Email" id="Email" placeholder="E-mail" class="big-input" required="">
+                            <label for="Email" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Correo electrónico</label><input type="text" name="Email" id="Email" placeholder="E-mail" class="big-input" required="">
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input type="text" name="subject" id="subject" placeholder="Asunto" class="big-input" required="" spellcheck="false" data-ms-editor="true">
+                            <label for="subject" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Asunto</label><input type="text" name="subject" id="subject" placeholder="Asunto" class="big-input" required="" spellcheck="false" data-ms-editor="true">
                         </div>
                         <div class="col-12">
-                            <textarea name="comments" id="comments" placeholder="Comentarios" rows="6" class="big-textarea" spellcheck="false" data-ms-editor="true"></textarea>
+                            <label for="comments" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Comentarios</label><textarea name="comments" id="comments" placeholder="Comentarios" rows="6" class="big-textarea" spellcheck="false" data-ms-editor="true"></textarea>
                         </div>
 						<div class="col-12">
 							<p style="text-align: justify; font-size: 11px; line-height: 16px;"><strong>Mar Escolano Fisioterapia</strong> en calidad de Responsable, le informa que la finalidad del tratamiento de sus datos es gestionar la solicitud de información y/o respuesta a la consulta planteada en el mensaje. La legitimación del tratamiento es el consentimiento del interesado. Sus datos no se cederán a terceros, salvo obligación legal. Puede ejercer sus derechos de Acceso, Rectificación, Supresión, Portabilidad, Limitación u Oposición al tratamiento de los datos aportados ante <strong>Mar Escolano Fisioterapia</strong>.</p>
-                            <input type="checkbox" style="width: 3%;" required=""> He leído y acepto <a href="politica-privacidad.html" target="_blank"><strong>la Política de Privacidad</strong></a>
+                            <input type="checkbox" id="acepto-privacidad" name="acepto_privacidad" value="si" style="width: 3%;" required=""><label for="acepto-privacidad">He leído y acepto</label> <a href="politica-privacidad.html" target="_blank"><strong>la Política de Privacidad</strong></a>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-transparent-dark-gray btn-large margin-20px-top">Enviar</button>
@@ -430,7 +440,7 @@
 							<li><a class="text-medium" href="servicios.html">Servicios</a></li>
 							<li><a class="text-medium" href="tratamientos.html">Tratamientos</a></li>
 							<li><a class="text-medium" href="contacto.html">Coger cita</a></li>
-						  <li><a class="text-medium" href="https://goo.gl/maps/8cAe1wz49uhVHwpF6" target="_blank">Cómo llegar</a></li>
+						  <li><a class="text-medium" href="https://www.google.com/maps/search/?api=1&amp;query=Mar+Escolano+Fisioterapia+Gandia" target="_blank">Cómo llegar</a></li>
 						  <li><a class="text-medium" href="aviso-legal.html">Aviso legal</a></li>
 						  <li><a class="text-medium" href="politica-privacidad.html">Política de privacidad</a></li>
 						  <li><a class="text-medium" href="politica-cookies.html">Política de cookies</a></li>
@@ -451,7 +461,7 @@
 							C/ Pellers, 24<br>
 							46702 Gandia (Valencia)<br><br>
 
-							<a href="https://goo.gl/maps/8cAe1wz49uhVHwpF6" target="_blank" class="text-medium"><strong style="color: #000; font-weight: 800">Ver en Google Maps</strong></a>
+							<a href="https://www.google.com/maps/search/?api=1&amp;query=Mar+Escolano+Fisioterapia+Gandia" target="_blank" class="text-medium"><strong style="color: #000; font-weight: 800">Ver en Google Maps</strong></a>
 						</p>
 
 						<div class="text-medium"><a href="mailto:marescolanofisio@gmail.com" style="color: #000">Email: marescolanofisio@gmail.com</a></div>
@@ -473,7 +483,7 @@
         <!-- end footer -->
         
 		<!-- start scroll to top -->
-        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+        <button type="button" class="scroll-top-arrow" aria-label="Volver arriba" style="border:0;cursor:pointer;"><i class="ti-arrow-up" aria-hidden="true"></i></button>
         <!-- end scroll to top  -->
         
 		<!-- javascript -->
