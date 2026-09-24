@@ -29,3 +29,10 @@
 /va/servicios/suelo-pelvico.html   /va/tratamientos/suelo-pelvico  301
 /en/servicios/suelo-pelvico        /en/tratamientos/suelo-pelvico  301
 /en/servicios/suelo-pelvico.html   /en/tratamientos/suelo-pelvico  301
+
+# Winback is the brand of equipment tecarterapia is delivered with, not a
+# separate treatment. Someone searching for the brand should land on the
+# treatment page rather than on a page that would duplicate it.
+/winback     /tratamientos/diatermia     301
+/va/winback  /va/tratamientos/diatermia  301
+/en/winback  /en/tratamientos/diatermia  301
