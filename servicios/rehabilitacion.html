@@ -96,6 +96,34 @@
         <meta property="og:url" content="https://marescolanofisioterapia.com/servicios/rehabilitacion">
         <meta property="og:image" content="https://marescolanofisioterapia.com/images/home/slide-5-clinica-mar-escolano-fisioterapia-gandia.jpg">
         <meta name="twitter:card" content="summary_large_image">
+        <!-- Breadcrumb for search results, so Google can print the path
+             instead of the bare address. Mirrors the visible trail exactly. -->
+        <script type="application/ld+json">
+{
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+                {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Inicio",
+                        "item": "https://marescolanofisioterapia.com/"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Servicios",
+                        "item": "https://marescolanofisioterapia.com/servicios"
+                },
+                {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Rehabilitación",
+                        "item": "https://marescolanofisioterapia.com/servicios/rehabilitacion"
+                }
+        ]
+}
+        </script>
     </head>
 	
     <body>
@@ -223,6 +251,18 @@
                         <!-- end sub title -->
                         <!-- start page title -->
                         <h1 class="alt-font text-white-2 font-weight-600 mb-0" style="font-family: 'Montserrat', sans-serif;">Rehabilitación</h1>
+                        <!-- Breadcrumb: where this page sits, and the way back up.
+                             The separators are aria-hidden so a screen reader reads
+                             the three names, not "slash". -->
+                        <nav aria-label="Ruta de navegación" class="d-block alt-font margin-10px-top" style="font-size:13px;line-height:20px">
+                            <ol style="list-style:none;margin:0;display:inline-block;padding:5px 14px;background:rgba(0,0,0,.4);border-radius:14px">
+                                <li style="display:inline"><a style="color:#fff" href="/">Inicio</a></li>
+                                <li style="display:inline;margin:0 7px;color:#fff" aria-hidden="true">&rsaquo;</li>
+                                <li style="display:inline"><a style="color:#fff" href="/servicios">Servicios</a></li>
+                                <li style="display:inline;margin:0 7px;color:#fff" aria-hidden="true">&rsaquo;</li>
+                                <li style="display:inline;color:#fff" aria-current="page">Rehabilitación</li>
+                            </ol>
+                        </nav>
                         <!-- end page title -->
                     </div>
                 </div>
