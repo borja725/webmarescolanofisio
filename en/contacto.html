@@ -312,23 +312,23 @@
                     <input type="checkbox" name="botcheck" class="hidden" style="display:none;" tabindex="-1" autocomplete="off">
                     <div class="row">
                         <div class="col-12 col-lg-6">
-                            <input type="text" name="name" id="name" placeholder="Full name" class="big-input" required="">
+                            <label for="name" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Full name</label><input type="text" name="name" id="name" placeholder="Full name" class="big-input" required="">
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input type="text" name="telefono" id="telefono" placeholder="Phone" class="big-input" required="" spellcheck="false" data-ms-editor="true">
+                            <label for="telefono" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Telephone</label><input type="text" name="telefono" id="telefono" placeholder="Phone" class="big-input" required="" spellcheck="false" data-ms-editor="true">
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input type="text" name="Email" id="Email" placeholder="E-mail" class="big-input" required="">
+                            <label for="Email" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Email address</label><input type="text" name="Email" id="Email" placeholder="E-mail" class="big-input" required="">
                         </div>
                         <div class="col-12 col-lg-6">
-                            <input type="text" name="subject" id="subject" placeholder="Subject" class="big-input" required="" spellcheck="false" data-ms-editor="true">
+                            <label for="subject" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Subject</label><input type="text" name="subject" id="subject" placeholder="Subject" class="big-input" required="" spellcheck="false" data-ms-editor="true">
                         </div>
                         <div class="col-12">
-                            <textarea name="comments" id="comments" placeholder="Message" rows="6" class="big-textarea" spellcheck="false" data-ms-editor="true"></textarea>
+                            <label for="comments" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Comments</label><textarea name="comments" id="comments" placeholder="Message" rows="6" class="big-textarea" spellcheck="false" data-ms-editor="true"></textarea>
                         </div>
 						<div class="col-12">
 							<p style="text-align: justify; font-size: 11px; line-height: 16px;"><strong>Mar Escolano Physiotherapy</strong>, as Data Controller, informs you that the purpose of processing your data is to manage your request for information and/or respond to the query raised in your message. The legal basis for processing is the consent of the data subject. Your data will not be shared with third parties, except where legally required. You may exercise your rights of Access, Rectification, Erasure, Portability, Restriction or Objection regarding the processing of the data provided, by contacting <strong>Mar Escolano Physiotherapy</strong>.</p>
-                            <input type="checkbox" style="width: 3%;" required=""> I have read and accept <a href="politica-privacidad.html" target="_blank"><strong>the Privacy Policy</strong></a>
+                            <input type="checkbox" id="acepto-privacidad" name="acepto_privacidad" value="si" style="width: 3%;" required=""><label for="acepto-privacidad">I have read and accept</label><a href="politica-privacidad.html" target="_blank"><strong>the Privacy Policy</strong></a>
                         </div>
                         <div class="col-12">
                             <button type="submit" class="btn btn-transparent-dark-gray btn-large margin-20px-top">Send</button>
