@@ -50,3 +50,13 @@ address.mef-contact {
     font-style: normal;
     margin: 0 0 30px;
 }
+
+/* M-10 - the questions in a frequently-asked-questions block are <h3>, so they
+   can be navigated by heading like any other section, but they should not be
+   shouted: the theme leaves h3 at 28px, which would make each question louder
+   than the <h2> above it. */
+h3.mef-size-faq { font-size: 19px; line-height: 27px; }
+
+@media (max-width: 767px) {
+    h3.mef-size-faq { font-size: 17px; line-height: 24px; }
+}
