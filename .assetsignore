@@ -1,0 +1,30 @@
+# Files Cloudflare must NOT publish.
+#
+# The whole working directory is uploaded as static assets, so anything not
+# listed here is reachable on the public site. That is not a theoretical risk:
+# .git was being served, which let anyone reconstruct the entire repository and
+# its full history, including every file ever deleted from it.
+#
+# It also broke the build. The pack file grew past Cloudflare's 25 MiB limit for
+# a single asset, so the deploy started failing outright - the exposure and the
+# broken build were the same bug.
+
+# version control - never publish
+.git
+.gitignore
+.gitattributes
+
+# project files, not content
+tools
+articulos
+serve.py
+wrangler.toml
+README.md
+.atl
+.claude
+
+# editor and OS leftovers
+.vscode
+.idea
+.DS_Store
+Thumbs.db
