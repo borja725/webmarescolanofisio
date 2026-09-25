@@ -1,0 +1,127 @@
+{
+  "slug": "entrenar-con-contractura",
+  "date": "2026-09-25",
+  "image": "/images/servicios/entrenamientos-clinica-mar-escolano-fisioterapia-gandia.jpg",
+  "image_size": [1000, 673],
+  "image_alt": {
+    "es": "Paciente entrenando con barra sobre la esterilla de la sala de ejercicio",
+    "va": "Pacient entrenant amb barra damunt l'estora de la sala d'exercici",
+    "en": "A patient training with a barbell on the mat in the exercise room"
+  },
+
+  "_origen": "Prueba del proceso. En un artículo real esto vendría de un audio de Mar. El audio simulado fue: «esta semana me han preguntado tres veces si pueden entrenar con una contractura; la gente se cree que hay que parar del todo y casi nunca es así, lo que pasa es que hay que cambiar qué se hace, no dejar de hacerlo».",
+
+  "es": {
+    "title": "¿Puedo entrenar con una contractura? Qué hacer y qué evitar",
+    "description": "Casi nadie tiene que parar del todo por una contractura. Lo que cambia es qué entrenas y cómo. Qué se puede seguir haciendo y cuándo sí conviene parar.",
+    "h1": "¿Puedo entrenar con una contractura?",
+    "lead": "Es una de las preguntas que más se repiten en consulta, y casi siempre viene con la misma idea detrás: que hay que parar del todo hasta que se pase. En la mayoría de los casos no es así, y parar del todo puede incluso alargar el problema.",
+    "body": [
+      ["Qué es realmente una contractura", [
+        "Una contractura es una zona de músculo que se ha quedado contraída y no termina de soltarse. No es una rotura, no es un desgarro y no hay tejido dañado que tenga que cicatrizar. Esa diferencia es la que cambia la respuesta.",
+        "Duele al tocarla, molesta al moverse en ciertas direcciones y da sensación de rigidez. Pero el músculo sigue siendo capaz de trabajar. Lo que ocurre es que trabaja peor y protesta.",
+        "Por eso el consejo de «reposo hasta que se pase» rara vez es el mejor: un músculo que no se mueve recibe menos flujo de sangre, pierde elasticidad y tiende a agarrotarse más. El reposo absoluto trata una contractura como si fuera una lesión con rotura, y no lo es."
+      ]],
+      ["Parar del todo casi nunca es la respuesta", [
+        "Lo que suele funcionar mejor no es dejar de entrenar, sino <strong>cambiar qué se entrena</strong>. Si la contractura está en el trapecio, seguir haciendo piernas no solo es posible: mantiene la rutina, el ánimo y la costumbre de entrenar, que son tres cosas que cuesta mucho recuperar cuando se pierden.",
+        "Hay además un motivo práctico. Quien para del todo suele volver a las tres semanas queriendo recuperar el tiempo perdido, entrena más de lo que debería el primer día y acaba con la misma molestia o con otra nueva. La vuelta brusca provoca más recaídas que el propio entrenamiento moderado.",
+        "Eso no significa apretar los dientes y seguir igual. Significa ajustar."
+      ]],
+      ["Qué sí y qué no, mientras dura", [
+        "Lo que suele sentar bien: mover la zona dentro de lo que no duele, trabajo de baja intensidad, calor suave antes de empezar, y seguir entrenando lo que no está afectado.",
+        "Lo que suele empeorarlo: el ejercicio que reproduce exactamente el dolor, cargar peso con una técnica que se ha adaptado para esquivar la molestia, y estirar con fuerza una zona que está irritada. Ese último es el error más frecuente, porque el estiramiento agresivo parece lo lógico y muchas veces irrita más.",
+        "Una regla sencilla para el día a día: una molestia leve que no aumenta durante la sesión y que no deja la zona peor al día siguiente suele ser aceptable. Si el dolor sube mientras entrenas, o si amaneces peor de como te acostaste, ese ejercicio hoy no tocaba."
+      ]],
+      ["Cuándo sí conviene parar y consultar", [
+        "Hay señales que no son de contractura y que conviene no interpretar por cuenta propia: un dolor que apareció de golpe durante un gesto concreto, con un chasquido o una sensación de latigazo; pérdida de fuerza real; hormigueo o adormecimiento que baja por el brazo o la pierna; o dolor que no mejora nada en dos semanas.",
+        "También merece consultar la contractura que vuelve siempre al mismo sitio. Una que reaparece cada pocas semanas rara vez es el problema: suele ser el síntoma de otra cosa, y tratarla una y otra vez sin mirar qué la provoca es entretenerse con el aviso en lugar de con la causa."
+      ]]
+    ],
+    "faq": [
+      ["¿Puedo darme calor o mejor frío?",
+       "Para una contractura, calor. Ayuda a que el músculo se relaje y mejora el riego de la zona. El frío está más indicado cuando hay inflamación reciente, que no es el caso habitual aquí."],
+      ["¿Sirven las pistolas de masaje?",
+       "Pueden aliviar un rato y a mucha gente le resultan cómodas. Conviene usarlas con cabeza: sobre el músculo, no sobre huesos ni articulaciones, sin insistir en un punto hasta que duela, y sabiendo que alivian el síntoma pero no corrigen lo que lo está provocando."],
+      ["Si no me duele al entrenar, ¿está curada?",
+       "No necesariamente. Es habitual que el dolor desaparezca antes que la contractura, sobre todo con el músculo caliente durante la sesión. Por eso conviene fijarse también en cómo está la zona al día siguiente."],
+      ["¿Me tengo que estirar?",
+       "Depende del momento. Estirar con suavidad suele venir bien; forzar un estiramiento sobre una zona irritada suele empeorarla. Si al estirar notas que el dolor aumenta en vez de ceder, esa no es la vía."]
+    ]
+  },
+
+  "va": {
+    "title": "Puc entrenar amb una contractura? Què fer i què evitar",
+    "description": "Quasi ningú ha de parar del tot per una contractura. El que canvia és què entrenes i com. Què es pot continuar fent i quan sí que convé parar.",
+    "h1": "Puc entrenar amb una contractura?",
+    "lead": "És una de les preguntes que més es repetixen en consulta, i quasi sempre ve amb la mateixa idea darrere: que cal parar del tot fins que es passe. En la majoria dels casos no és així, i parar del tot pot fins i tot allargar el problema.",
+    "body": [
+      ["Què és realment una contractura", [
+        "Una contractura és una zona de múscul que s'ha quedat contreta i no acaba de soltar-se. No és un trencament, no és un esquinç i no hi ha teixit danyat que haja de cicatritzar. Eixa diferència és la que canvia la resposta.",
+        "Fa mal en tocar-la, molesta en moure's en certes direccions i dona sensació de rigidesa. Però el múscul continua sent capaç de treballar. El que ocorre és que treballa pitjor i protesta.",
+        "Per això el consell de «repòs fins que es passe» poques vegades és el millor: un múscul que no es mou rep menys flux de sang, perd elasticitat i tendix a agarrotar-se més. El repòs absolut tracta una contractura com si fora una lesió amb trencament, i no ho és."
+      ]],
+      ["Parar del tot quasi mai és la resposta", [
+        "El que sol funcionar millor no és deixar d'entrenar, sinó <strong>canviar què s'entrena</strong>. Si la contractura està en el trapezi, continuar fent cames no només és possible: manté la rutina, l'ànim i el costum d'entrenar, que són tres coses que costa molt recuperar quan es perden.",
+        "Hi ha a més un motiu pràctic. Qui para del tot sol tornar al cap de tres setmanes volent recuperar el temps perdut, entrena més del que hauria el primer dia i acaba amb la mateixa molèstia o amb una altra de nova. La tornada brusca provoca més recaigudes que el mateix entrenament moderat.",
+        "Això no significa pitjar les dents i continuar igual. Significa ajustar."
+      ]],
+      ["Què sí i què no, mentre dura", [
+        "El que sol sentar bé: moure la zona dins del que no fa mal, treball de baixa intensitat, calor suau abans de començar, i continuar entrenant el que no està afectat.",
+        "El que sol empitjorar-ho: l'exercici que reproduïx exactament el dolor, carregar pes amb una tècnica que s'ha adaptat per a esquivar la molèstia, i estirar amb força una zona que està irritada. Eixe últim és l'error més freqüent, perquè l'estirament agressiu sembla el lògic i moltes vegades irrita més.",
+        "Una regla senzilla per al dia a dia: una molèstia lleu que no augmenta durant la sessió i que no deixa la zona pitjor l'endemà sol ser acceptable. Si el dolor puja mentre entrenes, o si et lleves pitjor de com et vas gitar, eixe exercici hui no tocava."
+      ]],
+      ["Quan sí que convé parar i consultar", [
+        "Hi ha senyals que no són de contractura i que convé no interpretar pel seu compte: un dolor que va aparéixer de colp durant un gest concret, amb un cruixit o una sensació de fuetada; pèrdua de força real; formigueig o adormiment que baixa pel braç o la cama; o dolor que no millora gens en dues setmanes.",
+        "També val la pena consultar la contractura que torna sempre al mateix lloc. Una que reapareix cada poques setmanes poques vegades és el problema: sol ser el símptoma d'una altra cosa, i tractar-la una vegada i una altra sense mirar què la provoca és entretindre's amb l'avís en lloc de amb la causa."
+      ]]
+    ],
+    "faq": [
+      ["Em puc donar calor o millor fred?",
+       "Per a una contractura, calor. Ajuda que el múscul es relaxe i millora el reg de la zona. El fred està més indicat quan hi ha inflamació recent, que no és el cas habitual ací."],
+      ["Servixen les pistoles de massatge?",
+       "Poden alleujar una estona i a molta gent li resulten còmodes. Convé usar-les amb cap: sobre el múscul, no sobre ossos ni articulacions, sense insistir en un punt fins que faça mal, i sabent que alleugen el símptoma però no corregixen el que l'està provocant."],
+      ["Si no em fa mal en entrenar, està curada?",
+       "No necessàriament. És habitual que el dolor desaparega abans que la contractura, sobretot amb el múscul calent durant la sessió. Per això convé fixar-se també en com està la zona l'endemà."],
+      ["M'he d'estirar?",
+       "Depén del moment. Estirar amb suavitat sol vindre bé; forçar un estirament sobre una zona irritada sol empitjorar-la. Si en estirar notes que el dolor augmenta en lloc de cedir, eixa no és la via."]
+    ]
+  },
+
+  "en": {
+    "title": "Can I train with a muscle knot? What helps and what does not",
+    "description": "Almost nobody has to stop altogether because of a muscle knot. What changes is what you train and how. What you can keep doing, and when stopping really is the answer.",
+    "h1": "Can I train with a muscle knot?",
+    "lead": "It is one of the questions that comes up most in the treatment room, and it almost always carries the same assumption: that you have to stop completely until it passes. In most cases that is not so, and stopping altogether can even drag the problem out.",
+    "body": [
+      ["What a muscle knot actually is", [
+        "A muscle knot is a patch of muscle that has stayed contracted and will not let go. It is not a tear, it is not a strain, and there is no damaged tissue that has to heal. That difference is what changes the answer.",
+        "It hurts when pressed, it is uncomfortable in certain movements and it feels stiff. But the muscle is still able to work. What happens is that it works worse and complains about it.",
+        "That is why the advice to rest until it passes is rarely the best: a muscle that does not move gets less blood flow, loses elasticity and tends to tighten further. Complete rest treats a knot as though it were a tear, and it is not one."
+      ]],
+      ["Stopping altogether is almost never the answer", [
+        "What usually works better is not to stop training but to <strong>change what you train</strong>. If the knot is in the upper back, carrying on with legs is not only possible: it keeps the routine, the morale and the habit of training, three things that are hard to get back once they are gone.",
+        "There is a practical reason too. People who stop completely tend to come back three weeks later wanting to make up for lost time, do too much on the first day and end up with the same problem or a new one. An abrupt return causes more setbacks than moderate training ever did.",
+        "That does not mean gritting your teeth and carrying on unchanged. It means adjusting."
+      ]],
+      ["What helps and what does not, while it lasts", [
+        "What usually helps: moving the area within what does not hurt, low-intensity work, gentle heat before starting, and carrying on training whatever is unaffected.",
+        "What usually makes it worse: the exercise that reproduces the pain exactly, lifting with a technique quietly adapted to dodge the discomfort, and forcefully stretching an area that is already irritated. That last one is the most common mistake, because an aggressive stretch feels like the obvious answer and often irritates further.",
+        "A simple rule for day to day: mild discomfort that does not build during the session and does not leave the area worse the next morning is usually acceptable. If the pain climbs while you train, or you wake up worse than you went to bed, that exercise was not for today."
+      ]],
+      ["When stopping and getting it looked at is the right call", [
+        "Some signs are not a muscle knot and are best not interpreted alone: pain that appeared suddenly during one specific movement, with a snap or a whipping sensation; real loss of strength; pins and needles or numbness running down the arm or leg; or pain that has not improved at all in two weeks.",
+        "A knot that keeps coming back to the same spot is also worth looking at. One that reappears every few weeks is rarely the problem itself: it tends to be the symptom of something else, and treating it again and again without asking what causes it is attending to the warning light rather than the engine."
+      ]]
+    ],
+    "faq": [
+      ["Should I use heat or ice?",
+       "For a muscle knot, heat. It helps the muscle relax and improves blood flow to the area. Ice is more use where there is recent inflammation, which is not usually the case here."],
+      ["Do massage guns work?",
+       "They can give relief for a while and many people find them convenient. Use them sensibly: on muscle, not over bone or joints, without pressing one spot until it hurts, and knowing they ease the symptom without correcting what is causing it."],
+      ["If it does not hurt while I train, has it gone?",
+       "Not necessarily. Pain often disappears before the knot does, especially with the muscle warm during a session. That is why it is worth noticing how the area feels the next day."],
+      ["Should I be stretching it?",
+       "It depends when. Gentle stretching usually helps; forcing a stretch on an irritated area usually does not. If the pain rises rather than eases as you stretch, that is not the way."]
+    ]
+  }
+}
