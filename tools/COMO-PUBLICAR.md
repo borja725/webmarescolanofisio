@@ -120,11 +120,30 @@ git commit -m "post: título del artículo"
 git push -u origin post/nombre-corto-del-tema
 ```
 
-Ahora ve a GitHub, a la pestaña **Branches**, y busca tu rama. Al lado aparece
-un **check verde**: pulsa en él y ahí está la dirección de la vista previa.
+Y ahora genera la dirección de vista previa:
 
-Esa dirección muestra el artículo tal y como quedaría publicado, pero **la web
-pública sigue sin tocar**.
+```bash
+CLOUDFLARE_ACCOUNT_ID=385070a667d44e014092ce47b75ff21d npx wrangler versions upload
+```
+
+Al final te imprime una línea así:
+
+```
+Version Preview URL: https://82985298-webmarescolanofisio.borja105702.workers.dev
+```
+
+Esa es la dirección. Muestra el artículo tal y como quedaría publicado, pero
+**la web pública sigue sin tocar**: `versions upload` sube la versión sin
+activarla.
+
+> **Por qué así y no con el check de GitHub.** El build automático de
+> Cloudflare funciona en `master` pero falla en las ramas, y eso está sin
+> resolver. Wrangler no depende de él. Si algún día se arregla el build, el
+> enlace aparecerá solo en el Pull Request y este paso sobrará.
+
+> **La dirección cambia en cada versión.** Lleva dentro el identificador
+> (`82985298-…`). Si Mar pide cambios y vuelves a subir, la dirección es otra y
+> hay que mandársela de nuevo. No se actualiza sola.
 
 ### 6. Mándale el enlace a Mar
 
@@ -150,8 +169,9 @@ Mar ha revisado el artículo y pide estos cambios:
 Ajústalo, vuelve a generar las páginas y comprueba.
 ```
 
-Después repite el paso 5. El enlace de la vista previa **es el mismo**: se
-actualiza solo. No hace falta mandarle uno nuevo, aunque avisarla ayuda.
+Después repite el paso 5. Ojo: al subir una versión nueva **la dirección
+cambia**, así que hay que mandarle el enlace nuevo. El anterior se queda
+mostrando la versión vieja.
 
 ---
 
@@ -214,6 +234,7 @@ python serve.py                                  # mirar en localhost:8000
 
 # subir para que Mar lo vea
 git add -A && git commit -m "post: título" && git push -u origin post/tema
+CLOUDFLARE_ACCOUNT_ID=385070a667d44e014092ce47b75ff21d npx wrangler versions upload
 
 # publicar, cuando Mar diga que sí
 git checkout master && git merge --no-ff post/tema && git push origin master
