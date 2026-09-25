@@ -1,0 +1,14 @@
+# Files Cloudflare should not publish.
+#
+# The whole repository is deployed as static assets, so anything here would
+# otherwise be reachable on the public site. These are project files, not
+# content: the tooling that builds articles, the source the articles are
+# written in, and the local development server.
+
+tools/
+articulos/
+serve.py
+wrangler.toml
+README.md
+.atl/
+.gitignore

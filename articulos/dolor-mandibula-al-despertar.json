@@ -1,0 +1,143 @@
+{
+  "slug": "dolor-mandibula-al-despertar",
+  "date": "2026-09-25",
+  "image": "/images/ATM/atm1-copia.jpg",
+  "image_size": [1600, 1082],
+  "image_alt": {
+    "es": "Fisioterapeuta con guantes tratando la mandíbula de una paciente tumbada en la camilla",
+    "va": "Fisioterapeuta amb guants tractant la mandíbula d'una pacient estesa a la llitera",
+    "en": "Gloved physiotherapist treating the jaw of a patient lying on the couch"
+  },
+
+  "es": {
+    "title": "Me duele la mandíbula al despertar: por qué pasa y qué hacer",
+    "description": "Despertarse con la mandíbula cansada, dolor de cabeza o el cuello agarrotado suele tener una explicación común. Qué ocurre por la noche y qué se puede hacer.",
+    "h1": "Me duele la mandíbula al despertar",
+    "lead": "Es uno de los motivos por los que más gente llega a la consulta sin saber que era cosa de fisioterapia. Se despiertan con la mandíbula cansada, a veces con dolor de cabeza en las sienes, y llevan meses pensando que duermen mal.",
+    "body": [
+      ["Qué está pasando mientras duermes", [
+        "Durante el día, los dientes de arriba y los de abajo apenas se tocan: unos minutos en total, al tragar y al masticar. El resto del tiempo la mandíbula cuelga relajada. Por la noche, en cambio, hay quien mantiene los dientes apretados durante horas, o los desliza de un lado a otro sin darse cuenta. Es lo que se conoce como bruxismo.",
+        "El músculo que cierra la mandíbula es, para su tamaño, uno de los más potentes del cuerpo. Está diseñado para trabajar a ráfagas cortas y muy fuertes, no para sostener una contracción durante seis horas seguidas. Cuando lo hace, amanece igual que amanecería el gemelo después de una noche de puntillas.",
+        "Por eso el dolor es peor al levantarse y suele mejorar a lo largo de la mañana. No es que se duerma en mala postura: es que el músculo ha estado trabajando toda la noche."
+      ]],
+      ["Por qué duele donde no esperabas", [
+        "Mucha gente no llega diciendo que le duele la mandíbula. Llega por dolor de cabeza en las sienes, por un oído que molesta sin tener nada, por mareo, o por un cuello que no termina de soltarse por mucho que se estire.",
+        "La explicación es que la articulación de la mandíbula y las vértebras cervicales altas comparten musculatura y comparten las mismas vías nerviosas. El cerebro recibe la señal, pero no siempre acierta con el remitente. Un músculo masticador sobrecargado puede referir dolor a la sien, al oído o detrás del ojo con una fidelidad que sorprende cuando se explora.",
+        "Es también la razón por la que tratar solo la mandíbula suele dar un alivio que no dura. Si el cuello no entra en el tratamiento, el problema vuelve."
+      ]],
+      ["Lo que casi nunca funciona por sí solo", [
+        "La férula de descarga es el primer paso en muchas consultas, y tiene sentido: protege los dientes del desgaste, que es un daño irreversible. Pero conviene entender qué hace y qué no. Una férula evita que los dientes sufran. No hace que se deje de apretar.",
+        "De hecho hay personas que siguen apretando exactamente igual con la férula puesta, y siguen despertándose con el mismo dolor, porque el músculo continúa trabajando. Han protegido el diente y no han tocado la causa del síntoma.",
+        "El error, entonces, no es ponerse férula. Es pensar que con eso está resuelto y no mirar el músculo, la articulación ni el cuello."
+      ]],
+      ["Qué se puede hacer", [
+        "Lo primero es saber qué parte del problema es muscular, qué parte es articular y qué parte viene del cuello. Eso se explora: cuánto abre la boca, si se desvía al abrir, si hay chasquido, qué músculos duelen al presionarlos y qué dolor reproducen al hacerlo.",
+        "A partir de ahí el tratamiento suele combinar trabajo manual sobre los músculos masticadores —parte de él desde dentro de la boca, con guante, que es la vía para llegar a algunos de ellos—, tratamiento de las cervicales altas, y ejercicio para recuperar el control del movimiento.",
+        "Y una parte que no es técnica y suele ser la que más cambia las cosas: entender cuándo se aprieta. Mucha gente descubre, cuando empieza a fijarse, que también lo hace de día, delante del ordenador o conduciendo. Ahí sí se puede intervenir de forma consciente."
+      ]],
+      ["Cuándo conviene que lo mire alguien", [
+        "No todo dolor de mandíbula necesita tratamiento. Una molestia puntual después de un día tenso, o tras una visita larga al dentista, suele pasar sola en unos días.",
+        "Merece la pena consultar cuando el dolor se repite por las mañanas durante semanas, cuando la boca no abre lo que abría, cuando aparece un bloqueo —ese momento en que la mandíbula se queda encallada y cuesta abrir o cerrar—, o cuando se acompaña de dolores de cabeza frecuentes que nadie ha logrado explicar.",
+        "En clínica trabajamos con frecuencia junto al odontólogo, porque hay partes del problema que son suyas y partes que son nuestras. Si lo que vemos corresponde a otro profesional, se lo decimos."
+      ]]
+    ],
+    "faq": [
+      ["¿El bruxismo se cura?",
+       "Se controla mejor de lo que se cura. Las causas son varias y no todas están en la boca. Lo que sí se puede hacer, y se nota bastante rápido, es bajar el dolor, recuperar la apertura y reducir la sobrecarga del músculo."],
+      ["Llevo férula y me sigue doliendo, ¿la estoy usando mal?",
+       "Probablemente no. La férula protege el diente del desgaste, que es su función, pero no impide que el músculo siga apretando. Que el dolor continúe es coherente con eso, y es un buen motivo para mirar el músculo y la articulación."],
+      ["¿Tiene que ver con el estrés?",
+       "En muchos casos sí, aunque no en todos y nunca de forma exclusiva. Hay factores de la propia articulación, de la mordida y del sueño que también cuentan. Decir que es solo estrés simplifica un problema que casi nunca tiene una sola causa."],
+      ["¿Hace falta meter la mano en la boca?",
+       "Parte del tratamiento se realiza por dentro, con guante, porque hay músculos a los que no se llega desde fuera. Se explica antes, se hace con su consentimiento y puede pararse en cualquier momento. No es doloroso, aunque al principio extraña."]
+    ]
+  },
+
+  "va": {
+    "title": "Em fa mal la mandíbula en despertar: per què passa i què fer",
+    "description": "Despertar-se amb la mandíbula cansada, mal de cap o el coll agarrotat sol tindre una explicació comuna. Què ocorre de nit i què es pot fer.",
+    "h1": "Em fa mal la mandíbula en despertar",
+    "lead": "És un dels motius pels quals més gent arriba a la consulta sense saber que era cosa de fisioteràpia. Es desperten amb la mandíbula cansada, de vegades amb mal de cap a les temples, i fa mesos que pensen que dormen malament.",
+    "body": [
+      ["Què passa mentre dorms", [
+        "Durant el dia, les dents de dalt i les de baix a penes es toquen: uns minuts en total, en engolir i en mastegar. La resta del temps la mandíbula penja relaxada. De nit, en canvi, hi ha qui manté les dents pitjades durant hores, o les llisca d'un costat a l'altre sense adonar-se'n. És el que es coneix com a bruxisme.",
+        "El múscul que tanca la mandíbula és, per la seua grandària, un dels més potents del cos. Està dissenyat per a treballar a ràfegues curtes i molt fortes, no per a sostindre una contracció durant sis hores seguides. Quan ho fa, es lleva igual que es llevaria el bessó després d'una nit de puntetes.",
+        "Per això el dolor és pitjor en alçar-se i sol millorar al llarg del matí. No és que es dorma en mala postura: és que el múscul ha estat treballant tota la nit."
+      ]],
+      ["Per què fa mal on no ho esperaves", [
+        "Molta gent no arriba dient que li fa mal la mandíbula. Arriba per mal de cap a les temples, per una orella que molesta sense tindre res, per mareig, o per un coll que no acaba de soltar-se per molt que s'estire.",
+        "L'explicació és que l'articulació de la mandíbula i les vèrtebres cervicals altes comparteixen musculatura i comparteixen les mateixes vies nervioses. El cervell rep el senyal, però no sempre encerta amb el remitent. Un múscul masticador sobrecarregat pot referir dolor a la temple, a l'orella o darrere de l'ull amb una fidelitat que sorprén quan s'explora.",
+        "És també la raó per la qual tractar només la mandíbula sol donar un alleujament que no dura. Si el coll no entra en el tractament, el problema torna."
+      ]],
+      ["El que quasi mai funciona tot sol", [
+        "La fèrula de descàrrega és el primer pas en moltes consultes, i té sentit: protegix les dents del desgast, que és un dany irreversible. Però convé entendre què fa i què no. Una fèrula evita que les dents patisquen. No fa que es deixe de pitjar.",
+        "De fet hi ha persones que continuen pitjant exactament igual amb la fèrula posada, i continuen despertant-se amb el mateix dolor, perquè el múscul continua treballant. Han protegit la dent i no han tocat la causa del símptoma.",
+        "L'error, llavors, no és posar-se fèrula. És pensar que amb això està resolt i no mirar el múscul, l'articulació ni el coll."
+      ]],
+      ["Què es pot fer", [
+        "El primer és saber quina part del problema és muscular, quina part és articular i quina part ve del coll. Això s'explora: quant obri la boca, si es desvia en obrir, si hi ha cruixit, quins músculs fan mal en pressionar-los i quin dolor reproduïxen en fer-ho.",
+        "A partir d'ahí el tractament sol combinar treball manual sobre els músculs masticadors —part d'ell des de dins de la boca, amb guant, que és la via per a arribar a alguns d'ells—, tractament de les cervicals altes, i exercici per a recuperar el control del moviment.",
+        "I una part que no és tècnica i sol ser la que més canvia les coses: entendre quan es pitja. Molta gent descobrix, quan comença a fixar-se, que també ho fa de dia, davant de l'ordinador o conduint. Ahí sí que es pot intervindre de forma conscient."
+      ]],
+      ["Quan convé que ho mire algú", [
+        "No tot dolor de mandíbula necessita tractament. Una molèstia puntual després d'un dia tens, o després d'una visita llarga al dentista, sol passar sola en uns dies.",
+        "Val la pena consultar quan el dolor es repetix pels matins durant setmanes, quan la boca no obri el que obria, quan apareix un bloqueig —eixe moment en què la mandíbula es queda encallada i costa obrir o tancar—, o quan s'acompanya de mals de cap freqüents que ningú ha aconseguit explicar.",
+        "A la clínica treballem sovint al costat de l'odontòleg, perquè hi ha parts del problema que són seues i parts que són nostres. Si el que veiem correspon a un altre professional, l'hi diem."
+      ]]
+    ],
+    "faq": [
+      ["El bruxisme es cura?",
+       "Es controla millor del que es cura. Les causes són diverses i no totes estan en la boca. El que sí que es pot fer, i es nota prou ràpid, és baixar el dolor, recuperar l'obertura i reduir la sobrecàrrega del múscul."],
+      ["Porte fèrula i em continua fent mal, l'estic usant malament?",
+       "Probablement no. La fèrula protegix la dent del desgast, que és la seua funció, però no impedix que el múscul continue pitjant. Que el dolor continue és coherent amb això, i és un bon motiu per a mirar el múscul i l'articulació."],
+      ["Té a veure amb l'estrés?",
+       "En molts casos sí, encara que no en tots i mai de forma exclusiva. Hi ha factors de la pròpia articulació, de la mossegada i del son que també compten. Dir que és només estrés simplifica un problema que quasi mai té una sola causa."],
+      ["Cal ficar la mà dins de la boca?",
+       "Part del tractament es realitza per dins, amb guant, perquè hi ha músculs als quals no s'arriba des de fora. S'explica abans, es fa amb el seu consentiment i pot parar-se en qualsevol moment. No és dolorós, encara que al principi estranya."]
+    ]
+  },
+
+  "en": {
+    "title": "Waking up with jaw pain: why it happens and what helps",
+    "description": "Waking with a tired jaw, a headache or a stiff neck usually has one explanation in common. What goes on at night, and what can be done about it.",
+    "h1": "Waking up with jaw pain",
+    "lead": "It is one of the most common reasons people arrive at the clinic without realising it was a physiotherapy matter at all. They wake with a tired jaw, sometimes a headache at the temples, and have spent months assuming they simply sleep badly.",
+    "body": [
+      ["What is happening while you sleep", [
+        "During the day, the upper and lower teeth barely touch: a few minutes in total, swallowing and chewing. The rest of the time the jaw hangs relaxed. At night, though, some people hold their teeth clenched for hours, or slide them side to side without knowing it. This is what is known as bruxism.",
+        "The muscle that closes the jaw is, for its size, one of the strongest in the body. It is built for short, very powerful bursts, not for holding a contraction for six hours straight. When it does, you wake up the way your calf would after a night spent on tiptoe.",
+        "That is why the pain is worst on getting up and usually eases through the morning. It is not that you slept awkwardly: it is that the muscle has been working all night."
+      ]],
+      ["Why it hurts where you did not expect", [
+        "Many people do not arrive saying their jaw hurts. They arrive with headaches at the temples, an ear that aches with nothing wrong with it, dizziness, or a neck that will not let go however much they stretch it.",
+        "The explanation is that the jaw joint and the upper cervical vertebrae share muscles and share the same nerve pathways. The brain receives the signal but does not always get the sender right. An overloaded chewing muscle can refer pain to the temple, the ear or behind the eye with a consistency that is striking once you examine it.",
+        "It is also why treating only the jaw tends to give relief that does not last. If the neck is left out of the treatment, the problem comes back."
+      ]],
+      ["What almost never works on its own", [
+        "A night guard is the first step in many consultations, and rightly so: it protects the teeth from wear, which is irreversible damage. But it is worth understanding what it does and what it does not. A guard stops the teeth from suffering. It does not stop the clenching.",
+        "In fact there are people who clench exactly as much with the guard in, and keep waking with the same pain, because the muscle carries on working. They have protected the tooth and have not touched the cause of the symptom.",
+        "The mistake, then, is not wearing a guard. It is assuming that settles it, and never looking at the muscle, the joint or the neck."
+      ]],
+      ["What can be done", [
+        "The first step is working out which part of the problem is muscular, which part is in the joint and which part comes from the neck. That is examined: how wide the mouth opens, whether it deviates on opening, whether there is a click, which muscles hurt when pressed and what pain they reproduce.",
+        "From there, treatment usually combines manual work on the chewing muscles — some of it from inside the mouth, with a glove, which is the only way to reach some of them — treatment of the upper neck, and exercise to restore control of the movement.",
+        "And one part that is not technical and often changes the most: recognising when you clench. Many people discover, once they start paying attention, that they do it during the day too, at the computer or driving. That is something you can act on consciously."
+      ]],
+      ["When it is worth having it looked at", [
+        "Not every jaw ache needs treatment. Occasional soreness after a tense day, or after a long dental appointment, usually settles by itself within days.",
+        "It is worth seeking help when the pain returns in the mornings over weeks, when the mouth no longer opens as far as it did, when locking appears — that moment when the jaw gets stuck and opening or closing is hard — or when it comes with frequent headaches nobody has managed to explain.",
+        "At the clinic we frequently work alongside the dentist, because parts of the problem are theirs and parts are ours. If what we see belongs to another professional, we say so."
+      ]]
+    ],
+    "faq": [
+      ["Can bruxism be cured?",
+       "It is managed better than it is cured. The causes are several and not all of them are in the mouth. What can be done, and is felt fairly quickly, is reducing the pain, restoring the opening and easing the load on the muscle."],
+      ["I wear a guard and it still hurts. Am I using it wrong?",
+       "Probably not. The guard protects the tooth from wear, which is its job, but it does not stop the muscle clenching. Continuing pain is consistent with that, and it is a good reason to look at the muscle and the joint."],
+      ["Is it related to stress?",
+       "In many cases yes, though not in all and never on its own. There are factors in the joint itself, in the bite and in sleep that also count. Calling it only stress oversimplifies a problem that rarely has a single cause."],
+      ["Does a hand have to go inside my mouth?",
+       "Part of the treatment is done from the inside, with a glove, because some muscles cannot be reached from outside. It is explained beforehand, done with your consent and can be stopped at any point. It is not painful, though it feels odd at first."]
+    ]
+  }
+}
