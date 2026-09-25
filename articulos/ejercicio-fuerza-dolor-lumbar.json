@@ -1,0 +1,166 @@
+{
+  "slug": "ejercicio-fuerza-dolor-lumbar",
+  "date": "2026-09-25",
+  "image": "/images/servicios/rehabilitacion-clinica-mar-escolano-fisioterapia-gandia.jpg",
+  "image_size": [1000, 673],
+  "image_alt": {
+    "es": "La fisioterapeuta guía a un paciente que levanta una kettlebell por encima de la cabeza",
+    "va": "La fisioterapeuta guia un pacient que alça una kettlebell per damunt del cap",
+    "en": "The physiotherapist guiding a patient lifting a kettlebell overhead"
+  },
+
+  "_origen": "Audio de Mar del 25/09/2026, 35 s: «me gustaría un artículo en el blog sobre la importancia de realizar ejercicio de fuerza para prevenir lumbalgias, en el que se explique la importancia del deporte en esa zona para prevenir que la persona se pueda quedar enganchada, que sufra de dolores lumbares de forma recurrente, y por qué ayuda el ejercicio en eso.»",
+
+  "es": {
+    "title": "Ejercicio de fuerza y dolor lumbar: por qué previene las recaídas",
+    "description": "Quien se queda enganchado de la espalda una vez suele volver a quedarse. El ejercicio de fuerza es lo único que ha demostrado reducir esas recaídas. Por qué funciona.",
+    "h1": "Por qué la fuerza previene que te quedes enganchado",
+    "lead": "Quien se ha quedado enganchado de la espalda una vez sabe de lo que hablamos: el gesto tonto, el pinchazo, y tres días andando de lado. Lo que mucha gente no sabe es que el primer episodio es el mejor predictor del segundo, y que hay algo que reduce esa probabilidad de forma consistente.",
+    "body": [
+      ["Qué pasa cuando te quedas enganchado", [
+        "Casi siempre es un episodio de lo que llamamos lumbalgia inespecífica. «Inespecífica» no significa que no se sepa qué pasa: significa que no hay una estructura concreta rota que explique el dolor, y que el cuadro responde a una suma de factores. Es, con diferencia, el caso más frecuente.",
+        "El gesto que lo desencadena suele ser ridículo: agacharse a por un calcetín, girarse a coger algo del asiento de atrás. Por eso desconcierta tanto. Pero ese gesto no es la causa, es la gota. Lo que hay detrás es una zona que llevaba tiempo tolerando menos carga de la que se le pedía.",
+        "La buena noticia, y conviene decirla pronto, es que la inmensa mayoría de estos episodios mejora en semanas. La mala es que, sin hacer nada distinto, vuelven."
+      ]],
+      ["Por qué el reposo no es la respuesta", [
+        "Durante décadas la recomendación fue guardar cama. Hoy sabemos que eso empeora el pronóstico: quien reposa de más tarda más en recuperarse y tiene más probabilidad de que el dolor se cronifique.",
+        "El motivo tiene sentido si se piensa un momento. La espalda no duele porque esté rota, sino porque está sensible y ha perdido tolerancia. El reposo reduce aún más esa tolerancia, así que al volver a la vida normal la zona está peor preparada que antes. Cada episodio deja al siguiente un poco más cerca.",
+        "Mantener actividad dentro de lo que se tolera, aunque duela un poco, es hoy la recomendación de primera línea en toda la literatura sobre dolor lumbar."
+      ]],
+      ["Qué hace realmente el ejercicio de fuerza", [
+        "Aquí hay que desmontar una idea muy extendida: la de que los músculos «sujetan» la columna como si fuera un mástil a punto de caerse, y que hay que reforzarlos para que no se mueva. La columna no necesita que la sujeten. Es una estructura robusta y está hecha para moverse.",
+        "Lo que hace la fuerza es otra cosa, y es más útil de entender: <strong>aumenta la carga que la zona tolera antes de protestar</strong>. Un tejido que trabaja habitualmente con cargas se adapta a ellas. Uno que nunca las ve, no. Por eso el gesto tonto tumba a quien no entrena y no al que sí.",
+        "Y hay un segundo efecto, menos comentado y a veces más importante: quien entrena regularmente pierde el miedo a mover la espalda. El miedo al movimiento es uno de los factores que mejor predicen que un dolor lumbar se vuelva crónico, y se trata moviéndose, no explicándolo."
+      ]],
+      ["No es solo el core", [
+        "La palabra «core» ha hecho mucho daño. Se ha convertido en sinónimo de abdominales y planchas, y se ha vendido como la solución a todo dolor de espalda.",
+        "Los estudios que comparan programas centrados en el core con programas de fuerza general no encuentran que los primeros sean superiores. Lo que aparece una y otra vez es que <strong>lo importante es entrenar, no qué ejercicio concreto se elige</strong>.",
+        "Un programa que cubra piernas, cadera y tronco —sentadilla, peso muerto, empujes y tracciones, en la variante que cada persona pueda hacer— suele dar mejor resultado que treinta minutos de planchas, porque se parece más a lo que la espalda va a tener que hacer un martes cualquiera."
+      ]],
+      ["Cómo empezar sin liarla", [
+        "Dos principios, y con eso se evita la mayoría de los problemas.",
+        "<strong>Progresar despacio.</strong> La lesión no suele venir del peso, sino del salto: pasar de nada a mucho en dos semanas. El tejido se adapta, pero necesita tiempo para hacerlo, y ese tiempo no se puede acelerar con ganas.",
+        "<strong>Sostenerlo.</strong> Aquí está el factor que más pesa y el que menos se cumple. Un programa hecho durante ocho semanas y abandonado deja la espalda donde estaba a los pocos meses. Vale más algo modesto que se mantenga durante años que un plan perfecto que dure un mes.",
+        "Si se parte de un episodio reciente o de un dolor que lleva tiempo, la valoración previa es la que determina por dónde empezar y qué evitar de momento. No es lo mismo prevenir que tratar."
+      ]],
+      ["Cuándo conviene consultar", [
+        "La mayoría de los dolores lumbares no necesitan pruebas ni tratamiento urgente. Pero hay señales que sí conviene que alguien mire: dolor que baja por la pierna por debajo de la rodilla, hormigueo o pérdida de fuerza en el pie, dolor que no cede nada en varias semanas, o dolor que despierta por la noche de forma persistente.",
+        "Y merece consultar también quien lleva tres o cuatro episodios. Esa repetición no es mala suerte: es la señal de que la zona está pidiendo algo que no está recibiendo."
+      ]]
+    ],
+    "faq": [
+      ["¿Puedo hacer pesas si me duele la espalda?",
+       "En general sí, adaptando qué se hace y con cuánta carga. Lo que hay que evitar es el ejercicio que reproduce el dolor tal cual, no el ejercicio en sí. Si hay un episodio agudo reciente, conviene que alguien valore antes por dónde empezar."],
+      ["¿Es malo coger peso del suelo?",
+       "No. Es uno de los gestos más naturales que existe y la espalda está hecha para hacerlo. Lo que sí genera problemas es coger mucho peso sin haberlo entrenado nunca. Entrenar ese gesto con carga progresiva es precisamente una de las mejores formas de protegerlo."],
+      ["¿Necesito una faja lumbar?",
+       "Para el día a día, no. Puede tener sentido de forma puntual en trabajos con cargas muy altas, pero usarla de continuo tiene el problema de que la zona se acostumbra a que la sostengan desde fuera. El objetivo es el contrario."],
+      ["¿La postura es tan importante como dicen?",
+       "Menos de lo que se cree. No existe una postura perfecta, y la evidencia que relaciona una postura concreta con el dolor lumbar es mucho más débil de lo que sugiere el discurso habitual. Importa más moverse a menudo y tolerar carga que mantener una posición ideal."],
+      ["¿Y si nunca he hecho deporte?",
+       "Es justamente el perfil que más tiene que ganar. No hace falta gimnasio ni material: se empieza con el peso del propio cuerpo y se progresa desde ahí. Lo difícil no es empezar, es no dejarlo."]
+    ]
+  },
+
+  "va": {
+    "title": "Exercici de força i dolor lumbar: per què prevé les recaigudes",
+    "description": "Qui es queda enganxat de l'esquena una vegada sol tornar a quedar-se. L'exercici de força és l'única cosa que ha demostrat reduir eixes recaigudes. Per què funciona.",
+    "h1": "Per què la força prevé que et quedes enganxat",
+    "lead": "Qui s'ha quedat enganxat de l'esquena una vegada sap de què parlem: el gest tonto, la punxada, i tres dies caminant de costat. El que molta gent no sap és que el primer episodi és el millor predictor del segon, i que hi ha una cosa que reduïx eixa probabilitat de manera consistent.",
+    "body": [
+      ["Què passa quan et quedes enganxat", [
+        "Quasi sempre és un episodi del que anomenem lumbàlgia inespecífica. «Inespecífica» no significa que no se sàpia què passa: significa que no hi ha una estructura concreta trencada que explique el dolor, i que el quadre respon a una suma de factors. És, amb diferència, el cas més freqüent.",
+        "El gest que el desencadena sol ser ridícul: acotar-se a per un mitjó, girar-se a agafar alguna cosa del seient de darrere. Per això desconcerta tant. Però eixe gest no és la causa, és la gota. El que hi ha darrere és una zona que feia temps que tolerava menys càrrega de la que se li demanava.",
+        "La bona notícia, i convé dir-la prompte, és que la immensa majoria d'estos episodis millora en setmanes. La dolenta és que, sense fer res distint, tornen."
+      ]],
+      ["Per què el repòs no és la resposta", [
+        "Durant dècades la recomanació va ser guardar llit. Hui sabem que això empitjora el pronòstic: qui reposa de més tarda més a recuperar-se i té més probabilitat que el dolor es cronifique.",
+        "El motiu té sentit si es pensa un moment. L'esquena no fa mal perquè estiga trencada, sinó perquè està sensible i ha perdut tolerància. El repòs reduïx encara més eixa tolerància, així que en tornar a la vida normal la zona està pitjor preparada que abans. Cada episodi deixa el següent una mica més a prop.",
+        "Mantindre activitat dins del que es tolera, encara que faça una mica de mal, és hui la recomanació de primera línia en tota la literatura sobre dolor lumbar."
+      ]],
+      ["Què fa realment l'exercici de força", [
+        "Ací cal desmuntar una idea molt estesa: la que els músculs «subjecten» la columna com si fora un màstil a punt de caure, i que cal reforçar-los perquè no es moga. La columna no necessita que la subjecten. És una estructura robusta i està feta per a moure's.",
+        "El que fa la força és una altra cosa, i és més útil d'entendre: <strong>augmenta la càrrega que la zona tolera abans de protestar</strong>. Un teixit que treballa habitualment amb càrregues s'adapta a elles. Un que mai les veu, no. Per això el gest tonto tomba qui no entrena i no qui sí.",
+        "I hi ha un segon efecte, menys comentat i de vegades més important: qui entrena regularment perd la por a moure l'esquena. La por al moviment és un dels factors que millor prediuen que un dolor lumbar es torne crònic, i es tracta movent-se, no explicant-ho."
+      ]],
+      ["No és només el core", [
+        "La paraula «core» ha fet molt de mal. S'ha convertit en sinònim d'abdominals i planxes, i s'ha venut com la solució a tot dolor d'esquena.",
+        "Els estudis que comparen programes centrats en el core amb programes de força general no troben que els primers siguen superiors. El que apareix una vegada i una altra és que <strong>l'important és entrenar, no quin exercici concret es tria</strong>.",
+        "Un programa que cobrisca cames, maluc i tronc —sentadella, pes mort, empentes i traccions, en la variant que cada persona puga fer— sol donar millor resultat que trenta minuts de planxes, perquè s'assembla més al que l'esquena haurà de fer un dimarts qualsevol."
+      ]],
+      ["Com començar sense embolicar-la", [
+        "Dos principis, i amb això s'evita la majoria dels problemes.",
+        "<strong>Progressar a poc a poc.</strong> La lesió no sol vindre del pes, sinó del salt: passar de res a molt en dues setmanes. El teixit s'adapta, però necessita temps per a fer-ho, i eixe temps no es pot accelerar amb ganes.",
+        "<strong>Sostindre-ho.</strong> Ací està el factor que més pesa i el que menys es compleix. Un programa fet durant huit setmanes i abandonat deixa l'esquena on estava als pocs mesos. Val més una cosa modesta que es mantinga durant anys que un pla perfecte que dure un mes.",
+        "Si es parteix d'un episodi recent o d'un dolor que fa temps que dura, la valoració prèvia és la que determina per on començar i què evitar de moment. No és el mateix previndre que tractar."
+      ]],
+      ["Quan convé consultar", [
+        "La majoria dels dolors lumbars no necessiten proves ni tractament urgent. Però hi ha senyals que sí que convé que algú mire: dolor que baixa per la cama per davall del genoll, formigueig o pèrdua de força en el peu, dolor que no cedix gens en diverses setmanes, o dolor que desperta de nit de manera persistent.",
+        "I val la pena consultar també qui porta tres o quatre episodis. Eixa repetició no és mala sort: és el senyal que la zona està demanant alguna cosa que no està rebent."
+      ]]
+    ],
+    "faq": [
+      ["Puc fer peses si em fa mal l'esquena?",
+       "En general sí, adaptant què es fa i amb quanta càrrega. El que cal evitar és l'exercici que reproduïx el dolor tal com és, no l'exercici en si. Si hi ha un episodi agut recent, convé que algú valore abans per on començar."],
+      ["És dolent agafar pes de terra?",
+       "No. És un dels gestos més naturals que existixen i l'esquena està feta per a fer-lo. El que sí que genera problemes és agafar molt de pes sense haver-ho entrenat mai. Entrenar eixe gest amb càrrega progressiva és precisament una de les millors formes de protegir-lo."],
+      ["Necessite una faixa lumbar?",
+       "Per al dia a dia, no. Pot tindre sentit de manera puntual en treballs amb càrregues molt altes, però usar-la de continu té el problema que la zona s'acostuma que la sostinguen des de fora. L'objectiu és el contrari."],
+      ["La postura és tan important com diuen?",
+       "Menys del que es creu. No existix una postura perfecta, i l'evidència que relaciona una postura concreta amb el dolor lumbar és molt més dèbil del que suggerix el discurs habitual. Importa més moure's sovint i tolerar càrrega que mantindre una posició ideal."],
+      ["I si mai he fet esport?",
+       "És justament el perfil que més té a guanyar. No cal gimnàs ni material: es comença amb el pes del propi cos i es progressa des d'ahí. El difícil no és començar, és no deixar-ho."]
+    ]
+  },
+
+  "en": {
+    "title": "Strength training and back pain: why it prevents the relapses",
+    "description": "Anyone whose back has gone once tends to have it go again. Strength training is the one thing shown to reduce those relapses. Why it works.",
+    "h1": "Why strength training keeps your back from going again",
+    "lead": "Anyone whose back has gone once knows the story: the trivial movement, the stab of pain, and three days walking sideways. What many people do not know is that a first episode is the best predictor of a second, and that one thing consistently reduces that risk.",
+    "body": [
+      ["What is happening when your back goes", [
+        "It is almost always an episode of what we call non-specific low back pain. Non-specific does not mean nobody knows what is going on: it means there is no single broken structure that explains the pain, and that the picture comes from a combination of factors. It is by far the most common case.",
+        "The movement that sets it off is usually absurd: bending for a sock, twisting to reach something on the back seat. That is why it is so bewildering. But that movement is not the cause, it is the last straw. Behind it is an area that had been tolerating less load than it was being asked for.",
+        "The good news, worth saying early, is that the vast majority of these episodes settle within weeks. The bad news is that, without doing anything differently, they come back."
+      ]],
+      ["Why rest is not the answer", [
+        "For decades the advice was bed rest. We now know it makes the outlook worse: people who rest too much take longer to recover and are more likely to have the pain become persistent.",
+        "The reason makes sense on a moment's thought. A back does not hurt because it is broken, but because it is sensitised and has lost tolerance. Rest reduces that tolerance further, so on returning to normal life the area is less prepared than before. Each episode leaves the next one a little closer.",
+        "Staying active within what you can tolerate, even with some pain, is now the first-line recommendation across the whole literature on low back pain."
+      ]],
+      ["What strength training actually does", [
+        "A widespread idea needs dismantling here: that muscles hold the spine up like a mast about to topple, and that they must be strengthened so it does not move. The spine does not need holding up. It is a robust structure and it is built to move.",
+        "What strength does is something else, and it is more useful to understand: <strong>it raises the load the area tolerates before it complains</strong>. Tissue that regularly works under load adapts to it. Tissue that never sees any does not. That is why the trivial movement floors the person who does not train and not the one who does.",
+        "And there is a second effect, less talked about and sometimes more important: people who train regularly stop being afraid to move their back. Fear of movement is one of the strongest predictors that back pain will become chronic, and it is treated by moving, not by being told not to worry."
+      ]],
+      ["It is not just the core", [
+        "The word core has done a lot of damage. It has come to mean abdominals and planks, and it has been sold as the answer to all back pain.",
+        "Studies comparing core-focused programmes with general strength programmes do not find the former superior. What comes up again and again is that <strong>what matters is training at all, not which particular exercise is chosen</strong>.",
+        "A programme covering legs, hips and trunk - squat, deadlift, pushing and pulling, in whatever variation a person can manage - tends to work better than thirty minutes of planks, because it resembles what the back will actually have to do on an ordinary Tuesday."
+      ]],
+      ["How to start without causing trouble", [
+        "Two principles, and they avoid most of the problems.",
+        "<strong>Progress slowly.</strong> Injury rarely comes from the weight; it comes from the jump - going from nothing to a lot in a fortnight. Tissue adapts, but it needs time to do so, and that time cannot be hurried by enthusiasm.",
+        "<strong>Keep it going.</strong> This is the factor that weighs most and is met least. A programme done for eight weeks and abandoned leaves the back where it started within months. Something modest sustained for years beats a perfect plan that lasts one.",
+        "If you are starting from a recent episode or from pain that has been going on a while, an assessment is what determines where to begin and what to leave alone for now. Preventing and treating are not the same thing."
+      ]],
+      ["When to get it looked at", [
+        "Most back pain needs neither scans nor urgent treatment. But some signs are worth having checked: pain travelling down the leg below the knee, pins and needles or loss of strength in the foot, pain that has not eased at all over several weeks, or pain that persistently wakes you at night.",
+        "It is also worth seeing someone after a third or fourth episode. That repetition is not bad luck: it is the sign that the area is asking for something it is not getting."
+      ]]
+    ],
+    "faq": [
+      ["Can I lift weights if my back hurts?",
+       "Generally yes, adapting what you do and how much load. What needs avoiding is the exercise that reproduces the pain as it is, not exercise itself. After a recent acute episode it is worth having someone assess where to start."],
+      ["Is lifting from the floor bad for you?",
+       "No. It is one of the most natural movements there is and the back is built for it. What does cause trouble is lifting a lot without ever having trained for it. Training that movement with progressive load is in fact one of the best ways to protect it."],
+      ["Do I need a back support belt?",
+       "For everyday life, no. It can make sense occasionally in jobs with very heavy loads, but wearing one constantly has the drawback that the area gets used to being held from outside. The aim is the opposite."],
+      ["Does posture matter as much as people say?",
+       "Less than is believed. There is no perfect posture, and the evidence linking any particular posture to back pain is far weaker than the usual talk suggests. Moving often and tolerating load matter more than holding an ideal position."],
+      ["What if I have never done any sport?",
+       "That is precisely the profile with most to gain. No gym or equipment is needed: you start with your own body weight and progress from there. The hard part is not starting, it is not stopping."]
+    ]
+  }
+}
