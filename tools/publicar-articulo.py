@@ -62,6 +62,9 @@ BY = {'es': 'Por', 'va': 'Per', 'en': 'By'}
 BACK = {'es': 'Ver todos los artículos', 'va': 'Veure tots els articles',
         'en': 'See all articles'}
 CTA = {'es': 'Coger cita', 'va': 'Demanar cita', 'en': 'Book an appointment'}
+# the small line above the title, inherited from the skeleton page otherwise
+SUBTITLE = {'es': 'Desde la consulta', 'va': 'Des de la consulta',
+            'en': 'From the treatment room'}
 MONTH = {
     'es': ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio',
            'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'],
@@ -203,7 +206,7 @@ def crumb_jsonld(post, lang):
              "item": BASE + PREFIX[lang] + '/'},
             {"@type": "ListItem", "position": 2, "name": BLOG[lang],
              "item": index_url(lang)},
-            {"@type": "ListItem", "position": 3, "name": post[lang]['title'],
+            {"@type": "ListItem", "position": 3, "name": post[lang]['h1'],
              "item": url_of(post['slug'], lang)},
         ]}
 
@@ -298,9 +301,15 @@ def build_article(post, lang):
     s = s.replace('    </head>', ld + '\n    </head>', 1)
 
     # the title block: h1 and breadcrumb
-    s = re.sub(r'(<h1[^>]*>)\s*<strong>.*?</strong></h1>.*?(?=\n\s*<!-- end page title -->)',
-               lambda m: m.group(1) + '\n<strong>' + esc(p['h1']) + '</strong></h1>'
-               + crumb_html(lang, p['title']), s, flags=re.S, count=1)
+    # Replace the whole contents of the h1, not just a <strong> inside it: a
+    # skeleton page may read "Mar Escolano <strong>fisioterapia</strong>", with
+    # text before the tag, and a narrower pattern silently matches nothing and
+    # leaves the borrowed page's own title in place.
+    s = re.sub(r'(<h1[^>]*>).*?</h1>.*?(?=\n\s*<!-- end page title -->)',
+               lambda m: m.group(1) + '<strong>' + esc(p['h1']) + '</strong></h1>'
+               + crumb_html(lang, p['h1']), s, flags=re.S, count=1)
+    s = re.sub(r'(<span[^>]*margin-5px-bottom">)[^<]*(</span>)',
+               lambda m: m.group(1) + SUBTITLE[lang] + m.group(2), s, count=1)
 
     # the article itself replaces the treatment's content section
     start = s.find('<!-- start filter content -->')
@@ -371,8 +380,10 @@ def build_index(posts, lang):
                   '        <script type="application/ld+json">\n%s\n        </script>\n    </head>'
                   % json.dumps(ld, ensure_ascii=False, indent=8), 1)
 
-    s = re.sub(r'(<h1[^>]*>)\s*<strong>.*?</strong></h1>',
-               lambda m: m.group(1) + '\n<strong>Blog</strong></h1>', s, flags=re.S, count=1)
+    s = re.sub(r'(<h1[^>]*>).*?</h1>',
+               lambda m: m.group(1) + '<strong>Blog</strong></h1>', s, flags=re.S, count=1)
+    s = re.sub(r'(<span[^>]*margin-5px-bottom">)[^<]*(</span>)',
+               lambda m: m.group(1) + SUBTITLE[lang] + m.group(2), s, count=1)
 
     cards = []
     if not posts:
