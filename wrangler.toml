@@ -12,3 +12,7 @@ compatibility_date = "2026-09-20"
 
 [assets]
 directory = "./"
+
+# Required by `npx wrangler preview`, which Cloudflare runs for preview builds.
+# It can stay empty: assets and compatibility settings are read from the top level.
+[previews]
