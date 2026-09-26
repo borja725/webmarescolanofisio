@@ -53,6 +53,27 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://marescolanofisioterapia.com/blog"/>
     </url>
     <url>
+        <loc>https://marescolanofisioterapia.com/blog/chasquido-mandibula</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://marescolanofisioterapia.com/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://marescolanofisioterapia.com/va/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://marescolanofisioterapia.com/en/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://marescolanofisioterapia.com/blog/chasquido-mandibula"/>
+    </url>
+    <url>
+        <loc>https://marescolanofisioterapia.com/va/blog/chasquido-mandibula</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://marescolanofisioterapia.com/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://marescolanofisioterapia.com/va/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://marescolanofisioterapia.com/en/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://marescolanofisioterapia.com/blog/chasquido-mandibula"/>
+    </url>
+    <url>
+        <loc>https://marescolanofisioterapia.com/en/blog/chasquido-mandibula</loc>
+        <xhtml:link rel="alternate" hreflang="es-ES" href="https://marescolanofisioterapia.com/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="ca-ES" href="https://marescolanofisioterapia.com/va/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://marescolanofisioterapia.com/en/blog/chasquido-mandibula"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://marescolanofisioterapia.com/blog/chasquido-mandibula"/>
+    </url>
+    <url>
         <loc>https://marescolanofisioterapia.com/blog/dolor-mandibula-al-despertar</loc>
         <lastmod>2026-09-25</lastmod>
         <xhtml:link rel="alternate" hreflang="es-ES" href="https://marescolanofisioterapia.com/blog/dolor-mandibula-al-despertar"/>
@@ -78,6 +99,7 @@
     </url>
     <url>
         <loc>https://marescolanofisioterapia.com/blog/entrenar-con-contractura</loc>
+        <lastmod>2026-09-25</lastmod>
         <xhtml:link rel="alternate" hreflang="es-ES" href="https://marescolanofisioterapia.com/blog/entrenar-con-contractura"/>
         <xhtml:link rel="alternate" hreflang="ca-ES" href="https://marescolanofisioterapia.com/va/blog/entrenar-con-contractura"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://marescolanofisioterapia.com/en/blog/entrenar-con-contractura"/>
@@ -85,6 +107,7 @@
     </url>
     <url>
         <loc>https://marescolanofisioterapia.com/va/blog/entrenar-con-contractura</loc>
+        <lastmod>2026-09-25</lastmod>
         <xhtml:link rel="alternate" hreflang="es-ES" href="https://marescolanofisioterapia.com/blog/entrenar-con-contractura"/>
         <xhtml:link rel="alternate" hreflang="ca-ES" href="https://marescolanofisioterapia.com/va/blog/entrenar-con-contractura"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://marescolanofisioterapia.com/en/blog/entrenar-con-contractura"/>
@@ -92,6 +115,7 @@
     </url>
     <url>
         <loc>https://marescolanofisioterapia.com/en/blog/entrenar-con-contractura</loc>
+        <lastmod>2026-09-25</lastmod>
         <xhtml:link rel="alternate" hreflang="es-ES" href="https://marescolanofisioterapia.com/blog/entrenar-con-contractura"/>
         <xhtml:link rel="alternate" hreflang="ca-ES" href="https://marescolanofisioterapia.com/va/blog/entrenar-con-contractura"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://marescolanofisioterapia.com/en/blog/entrenar-con-contractura"/>
