@@ -25,11 +25,11 @@ git clone https://github.com/borja725/webmarescolanofisio.git
 cd webmarescolanofisio
 ```
 
-**La comprobación pendiente:** hay que confirmar en el panel de Cloudflare que
-están activadas las **vistas previa por rama** (*preview deployments*). Sin eso
-el paso 5 no funciona y Mar no puede revisar nada antes de publicar. Se
-comprueba subiendo una rama cualquiera y mirando si el check verde de GitHub
-lleva a una dirección de previsualización.
+**Las vistas previa por rama ya funcionan.** Hizo falta añadir un bloque
+`[previews]` a `wrangler.toml`: es lo que exige `wrangler preview`, el comando
+que Cloudflare usa para construir una rama. El de producción es `deploy`, que
+no lo necesitaba, y por eso `master` desplegaba bien mientras las ramas
+fallaban.
 
 ---
 
@@ -120,30 +120,29 @@ git commit -m "post: título del artículo"
 git push -u origin post/nombre-corto-del-tema
 ```
 
-Y ahora genera la dirección de vista previa:
+Y ya está: **no tienes que hacer nada más**. Cloudflare construye la rama sola
+y deja la dirección en un comentario del Pull Request, con esta forma:
+
+```
+https://post-nombre-de-tu-rama-webmarescolanofisio.borja105702.workers.dev
+```
+
+Ahí se ve el artículo tal y como quedaría publicado. **La web pública sigue sin
+tocar.**
+
+> **La dirección es estable.** Depende del nombre de la rama, no de la versión,
+> así que si Mar pide cambios y vuelves a subir, el enlace sigue siendo el
+> mismo y se actualiza solo. No hace falta reenviarlo.
+
+Si por lo que sea el comentario no aparece, puedes generar una dirección
+temporal a mano:
 
 ```bash
 CLOUDFLARE_ACCOUNT_ID=385070a667d44e014092ce47b75ff21d npx wrangler versions upload
 ```
 
-Al final te imprime una línea así:
-
-```
-Version Preview URL: https://82985298-webmarescolanofisio.borja105702.workers.dev
-```
-
-Esa es la dirección. Muestra el artículo tal y como quedaría publicado, pero
-**la web pública sigue sin tocar**: `versions upload` sube la versión sin
-activarla.
-
-> **Por qué así y no con el check de GitHub.** El build automático de
-> Cloudflare funciona en `master` pero falla en las ramas, y eso está sin
-> resolver. Wrangler no depende de él. Si algún día se arregla el build, el
-> enlace aparecerá solo en el Pull Request y este paso sobrará.
-
-> **La dirección cambia en cada versión.** Lleva dentro el identificador
-> (`82985298-…`). Si Mar pide cambios y vuelves a subir, la dirección es otra y
-> hay que mandársela de nuevo. No se actualiza sola.
+Esa sí cambia en cada versión, así que es una salida de emergencia, no el
+camino habitual.
 
 ### 6. Mándale el enlace a Mar
 
@@ -169,9 +168,9 @@ Mar ha revisado el artículo y pide estos cambios:
 Ajústalo, vuelve a generar las páginas y comprueba.
 ```
 
-Después repite el paso 5. Ojo: al subir una versión nueva **la dirección
-cambia**, así que hay que mandarle el enlace nuevo. El anterior se queda
-mostrando la versión vieja.
+Después repite el paso 5. El enlace de la vista previa **es el mismo**: al
+estar ligado a la rama, se actualiza solo con el nuevo contenido. No hace falta
+mandarle uno nuevo, aunque avisarla ayuda.
 
 ---
 
@@ -234,7 +233,7 @@ python serve.py                                  # mirar en localhost:8000
 
 # subir para que Mar lo vea
 git add -A && git commit -m "post: título" && git push -u origin post/tema
-CLOUDFLARE_ACCOUNT_ID=385070a667d44e014092ce47b75ff21d npx wrangler versions upload
+# Cloudflare deja el enlace en un comentario del Pull Request
 
 # publicar, cuando Mar diga que sí
 git checkout master && git merge --no-ff post/tema && git push origin master
