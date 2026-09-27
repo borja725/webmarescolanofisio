@@ -206,8 +206,14 @@
                 va: ['contacte', 'cita', 'demanar cita', 'reservar', 'telefon', 'correu', 'adreca', 'horari', 'horaris', 'on estem', 'com arribar', 'ubicacio'],
                 en: ['contact', 'appointment', 'book', 'booking', 'phone', 'email', 'address', 'opening hours', 'where we are', 'directions', 'location']
             }
-        }
-    ];
+        },
+        /* --- blog: generado por tools/publicar-articulo.py, no editar a mano --- */
+        { url: '/blog/dolor-mandibula-al-despertar', title: { es: 'Me duele la mandíbula al despertar', va: 'Em fa mal la mandíbula en despertar', en: 'Waking up with jaw pain' },
+          keywords: { es: ['duele', 'mandíbula', 'despertar', 'pasa', 'hacer', 'pasando', 'mientras', 'duermes', 'donde', 'esperabas', 'nunca', 'funciona'], va: ['mandíbula', 'despertar', 'passa', 'mentre', 'dorms', 'esperaves', 'quasi', 'funciona', 'convé'], en: ['waking', 'with', 'pain', 'happens', 'what', 'helps', 'happening', 'while', 'sleep', 'hurts', 'where', 'expect'] } },
+        { url: '/blog/entrenar-con-contractura', title: { es: '¿Puedo entrenar con una contractura?', va: 'Puc entrenar amb una contractura?', en: 'Can I train with a muscle knot?' },
+          keywords: { es: ['puedo', 'entrenar', 'contractura', 'hacer', 'evitar', 'realmente', 'parar', 'nunca', 'respuesta', 'mientras', 'cuándo', 'conviene'], va: ['entrenar', 'contractura', 'evitar', 'realment', 'parar', 'quasi', 'resposta', 'mentre', 'convé', 'consultar'], en: ['train', 'with', 'muscle', 'knot', 'what', 'helps', 'does', 'actually', 'stopping', 'altogether', 'almost', 'never'] } },
+        /* --- fin del blog --- */
+];
 
     var MAX_RESULTS = 6;
 

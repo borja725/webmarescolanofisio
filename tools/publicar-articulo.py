@@ -459,6 +459,113 @@ def update_nav():
     print('[nav] paginas con Blog en el menu: %d' % n)
 
 
+# ------------------------------------------------- links, and the site search
+def canonicalizar(path):
+    """Point every internal link at the canonical address.
+
+    The skeleton is cloned from a real page, so a fresh article inherits links
+    like ../contacto.html - which answers 307 and redirects. Every page of this
+    site declares its canonical address without .html, and M-12 rewrote all
+    2772 internal links to match. Without this step each new article would
+    quietly bring the problem back.
+
+    Absolute paths rather than relative ones: served as /blog/slug, with no
+    extension, a browser resolves relative links against /blog/, which is not
+    where they were written from."""
+    raw = open(path, encoding='utf-8', newline='').read()
+    nl = '\r\n' if '\r\n' in raw else '\n'
+    s = raw.replace('\r\n', '\n')
+    base = os.path.dirname(path)
+
+    def one(m):
+        whole, href = m.group(0), m.group(1)
+        if href.startswith(('http', 'mailto:', 'tel:', 'javascript', '#')) or '.html' not in href:
+            return whole
+        frag = ''
+        if '#' in href:
+            href, frag = href.split('#', 1)
+            frag = '#' + frag
+        t = (href.lstrip('/') if href.startswith('/')
+             else os.path.normpath(os.path.join(base, href)).replace(os.sep, '/'))
+        if not os.path.exists(t):
+            return whole
+        u = t[:-5]
+        c = '/' if u == 'index' else ('/%s/' % u[:-6] if u.endswith('/index') else '/' + u)
+        return whole.replace('href="%s"' % m.group(1), 'href="%s%s"' % (c, frag))
+
+    new = re.sub(r'<a\b[^>]*?href="([^"]+)"', one, s)
+    if new != s:
+        open(path, 'w', encoding='utf-8', newline='').write(new.replace('\n', nl))
+        return len(re.findall(r'<a\b[^>]*?href="[^"]*\.html', s))
+    return 0
+
+
+def actualizar_buscador(posts):
+    """Register the articles in the site's own search index.
+
+    That index is a hand-written list inside js/site-search.js. A search box
+    that cannot find published articles is worse than no search box, so the
+    generator keeps its own block up to date. Only the block between the two
+    markers is touched; everything the theme and we wrote by hand is left
+    exactly as it is."""
+    p = 'js/site-search.js'
+    raw = open(p, encoding='utf-8', newline='').read()
+    nl = '\r\n' if '\r\n' in raw else '\n'
+    s = raw.replace('\r\n', '\n')
+
+    INI = '        /* --- blog: generado por tools/publicar-articulo.py, no editar a mano --- */'
+    FIN = '        /* --- fin del blog --- */'
+
+    filas = []
+    for post in posts:
+        for lang in LANGS:
+            pass
+        # one entry per article, with its three titles and keywords drawn from
+        # the article itself rather than invented here
+        kw = {}
+        for lang in LANGS:
+            a = post[lang]
+            palabras = re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{4,}', a['title'].lower())
+            for h, _ in a['body']:
+                palabras += re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{5,}', h.lower())
+            vistos = []
+            for w in palabras:
+                if w not in vistos:
+                    vistos.append(w)
+            kw[lang] = vistos[:12]
+        filas.append(
+            "        { url: '/blog/%s', title: { es: '%s', va: '%s', en: '%s' },\n"
+            "          keywords: { es: [%s], va: [%s], en: [%s] } },"
+            % (post['slug'],
+               post['es']['h1'].replace("'", "\\'"),
+               post['va']['h1'].replace("'", "\\'"),
+               post['en']['h1'].replace("'", "\\'"),
+               ', '.join("'%s'" % w for w in kw['es']),
+               ', '.join("'%s'" % w for w in kw['va']),
+               ', '.join("'%s'" % w for w in kw['en'])))
+
+    bloque = INI + '\n' + '\n'.join(filas) + '\n' + FIN
+
+    if INI in s:
+        s = re.sub(re.escape(INI) + r'.*?' + re.escape(FIN), bloque, s, flags=re.S)
+    else:
+        # Insert just before the closing bracket of the INDEX array. The bracket
+        # is not necessarily at the start of a line - in this file the whole
+        # array is written across lines that end mid-object - so look for the
+        # bracket itself, and add the comma the previous entry does not carry.
+        i = s.find('var INDEX')
+        j = s.find('];', i)
+        if j < 0:
+            print('[buscador] no encuentro el final del indice, no toco nada')
+            return 0
+        antes = s[:j].rstrip()
+        coma = '' if antes.endswith(',') else ','
+        s = antes + coma + '\n' + bloque + '\n' + s[j:]
+
+    open(p, 'w', encoding='utf-8', newline='').write(s.replace('\n', nl))
+    return len(filas)
+
+
 def load_posts():
     out = []
     if os.path.isdir('articulos'):
@@ -506,7 +613,9 @@ def comprobar():
                     json.loads(b.group(1))
                 except Exception as e:
                     bad.append('%s: JSON-LD invalido (%s)' % (fp, e))
-            if not re.search(r'<li><a href="[^"]*blog\.html">Blog</a></li>', s):
+            # the link may be /blog or ../blog.html depending on whether the
+            # canonicalising pass has run, so accept either
+            if not re.search(r'<li><a href="[^"]*blog(\.html)?">Blog</a></li>', s):
                 bad.append('%s: sin Blog en el menu' % fp)
     for lang in LANGS:
         ip = index_path(lang)
@@ -515,7 +624,8 @@ def comprobar():
             continue
         s = open(ip, encoding='utf-8', errors='ignore').read()
         for p in posts:
-            if '/blog/%s.html' % p['slug'] not in s:
+            # same here: '/blog/slug' with or without the extension
+            if not re.search(r'/blog/%s(\.html)?"' % re.escape(p['slug']), s):
                 bad.append('%s: no enlaza el articulo %s' % (ip, p['slug']))
     print('problemas: %d' % len(bad))
     for b in bad[:20]:
@@ -549,6 +659,18 @@ def main():
             build_index(posts, lang))
     print('[indice] %d articulos listados' % len(posts))
     update_nav()
+
+    # Two things the site as a whole already got right, applied to what was
+    # just generated so a new article cannot quietly undo them.
+    n = 0
+    for post in posts:
+        for lang in LANGS:
+            n += canonicalizar(path_of(post['slug'], lang))
+    for lang in LANGS:
+        n += canonicalizar(index_path(lang))
+    print('[enlaces] apuntados a la direccion canonica: %d' % n)
+    print('[buscador] articulos en el indice de busqueda: %d'
+          % actualizar_buscador(posts))
     print('')
     print('Ahora comprueba lo que ha salido, antes de publicar nada:')
     print('    python tools/publicar-articulo.py --comprobar')
