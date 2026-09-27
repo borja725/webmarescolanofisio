@@ -1,0 +1,144 @@
+{
+  "slug": "ejercicio-fuerza-dolor-lumbar",
+  "date": "2026-09-25",
+  "image": "/images/servicios/rehabilitacion-clinica-mar-escolano-fisioterapia-gandia.jpg",
+  "image_size": [1000, 673],
+  "image_alt": {
+    "es": "La fisioterapeuta guía a un paciente que levanta una kettlebell por encima de la cabeza",
+    "va": "La fisioterapeuta guia un pacient que alça una kettlebell per damunt del cap",
+    "en": "The physiotherapist guiding a patient lifting a kettlebell overhead"
+  },
+
+  "_origen": "Audio de Mar del 25/09/2026, 35 s: «me gustaría un artículo en el blog sobre la importancia de realizar ejercicio de fuerza para prevenir lumbalgias, en el que se explique la importancia del deporte en esa zona para prevenir que la persona se pueda quedar enganchada, que sufra de dolores lumbares de forma recurrente, y por qué ayuda el ejercicio en eso.»",
+
+  "_alcance": "El artículo cubre exactamente los cinco puntos del encargo y nada más. En una versión anterior se añadieron por cuenta propia una crítica al concepto de core, la faja lumbar y la postura: son temas defendibles, pero Mar no los pidió y el artículo lleva su firma. La única sección no encargada que se conserva es la de cuándo consultar, por prudencia clínica; si Mar prefiere quitarla, se quita.",
+
+  "es": {
+    "title": "Ejercicio de fuerza para prevenir el dolor lumbar recurrente",
+    "description": "Quedarse enganchado de la espalda una vez es frecuente. Que pase tres o cuatro veces ya no es mala suerte. Por qué el ejercicio de fuerza es lo que evita que vuelva.",
+    "h1": "Por qué la fuerza previene que te quedes enganchado",
+    "lead": "Es una de las cosas que más repetimos en consulta, y de las que más cuesta que calen: el ejercicio de fuerza no es solo para recuperarse de un dolor lumbar. Es, sobre todo, lo que evita que vuelva.",
+    "body": [
+      ["Quedarse enganchado", [
+        "La escena es siempre parecida. Un gesto sin importancia —agacharse a por algo, girarse a coger una bolsa— y de pronto la espalda se bloquea. Duele al moverse, cuesta enderezarse y se pasan dos o tres días andando de lado.",
+        "Lo que más desconcierta es precisamente eso: que el gesto era ridículo. Nadie entiende cómo agacharse a recoger un calcetín puede dejarte así cuando el sábado moviste una lavadora sin problema.",
+        "La explicación es que el gesto no es la causa. Es la gota. Lo que hay detrás es una zona que llevaba tiempo aguantando más de lo que estaba preparada para aguantar."
+      ]],
+      ["El problema no es el episodio: es que vuelve", [
+        "La mayoría de estos episodios se pasa en unas semanas, y eso hace que se le quite importancia. El problema es lo que viene después.",
+        "Quien se ha quedado enganchado una vez tiene bastantes más probabilidades de volver a quedarse. Y a partir del tercero o el cuarto empieza a instalarse otra cosa: la sensación de tener una espalda frágil, el miedo a ciertos movimientos, y la costumbre de dejar de hacer cosas por si acaso.",
+        "Esa es la parte que de verdad cambia la vida de alguien, y es la que se puede evitar."
+      ]],
+      ["Por qué el ejercicio de fuerza lo previene", [
+        "Un tejido que trabaja habitualmente con carga se adapta a esa carga. Uno que nunca la ve, no. Es así de simple y es el mecanismo de fondo.",
+        "Lo que hace la fuerza es <strong>subir el listón de lo que la zona tolera antes de protestar</strong>. Si tu espalda está acostumbrada a manejar carga de forma regular y controlada, el gesto tonto de un martes cualquiera se queda muy por debajo de ese listón. Si no lo está, ese mismo gesto lo supera.",
+        "Por eso el ejercicio no es solo un tratamiento: es lo único que modifica de verdad la probabilidad de que haya un próximo episodio. Un tratamiento resuelve el dolor de ahora. La fuerza es lo que trabaja sobre el de dentro de seis meses."
+      ]],
+      ["Qué papel juega el deporte", [
+        "Mantenerse activo importa, pero conviene distinguir dos cosas que se confunden a menudo. Caminar, nadar o moverse a diario es bueno por muchos motivos, y ayuda. No es, sin embargo, lo mismo que entrenar fuerza.",
+        "La adaptación de la que hablamos —que el tejido tolere más— necesita carga. Eso significa trabajar con peso, con el del propio cuerpo al principio si hace falta, e ir subiendo poco a poco. Un entrenamiento que cubra piernas, cadera y tronco, porque la espalda no trabaja sola: lo que no hacen las piernas y la cadera acaba haciéndolo ella.",
+        "Y dos cosas que marcan la diferencia entre que funcione o no. <strong>Progresar despacio</strong>, porque las lesiones no suelen venir del peso sino del salto de golpe. Y <strong>sostenerlo en el tiempo</strong>, porque un programa hecho ocho semanas y abandonado deja la espalda donde estaba a los pocos meses. Vale más algo modesto durante años que un plan perfecto durante un mes."
+      ]],
+      ["Cuándo conviene que lo mire alguien", [
+        "Empezar a entrenar por tu cuenta cuando la espalda está bien es razonable. Cuando hay un episodio reciente, o un dolor que lleva tiempo, la valoración previa es la que determina por dónde empezar y qué dejar para más adelante.",
+        "Y hay señales que conviene no interpretar por cuenta propia: dolor que baja por la pierna por debajo de la rodilla, hormigueo o pérdida de fuerza en el pie, o dolor que no cede nada en varias semanas."
+      ]]
+    ],
+    "faq": [
+      ["Si me he quedado enganchado, ¿tengo que guardar reposo?",
+       "Menos del que la gente cree. Mantener actividad dentro de lo que se tolera suele ayudar más que parar del todo, aunque los primeros días haya que bajar el ritmo. Lo que no conviene es quedarse quieto esperando a que se pase."],
+      ["¿Puedo entrenar fuerza si ya tengo dolor lumbar?",
+       "En general sí, adaptando qué se hace y con cuánta carga. Lo que hay que evitar es el ejercicio que reproduce el dolor tal cual, no el ejercicio en sí. Si el episodio es reciente, conviene valorarlo antes para saber por dónde empezar."],
+      ["¿Hace falta gimnasio?",
+       "No para empezar. Se puede progresar bastante con el peso del propio cuerpo antes de necesitar material. Lo que sí hace falta es constancia y subir la exigencia poco a poco: sin eso no hay adaptación."],
+      ["¿Cuánto tengo que entrenar para que sirva?",
+       "Eso depende de cada persona y de su punto de partida, y es parte de lo que se decide en la valoración. Lo que sí está claro es que lo determinante no es la intensidad de las primeras semanas, sino que siga haciéndose dentro de un año."]
+    ]
+  },
+
+  "va": {
+    "title": "Exercici de força per a previndre el dolor lumbar recurrent",
+    "description": "Quedar-se enganxat de l'esquena una vegada és freqüent. Que passe tres o quatre vegades ja no és mala sort. Per què l'exercici de força és el que evita que torne.",
+    "h1": "Per què la força prevé que et quedes enganxat",
+    "lead": "És una de les coses que més repetim en consulta, i de les que més costa que calen: l'exercici de força no és només per a recuperar-se d'un dolor lumbar. És, sobretot, el que evita que torne.",
+    "body": [
+      ["Quedar-se enganxat", [
+        "L'escena és sempre pareguda. Un gest sense importància —acotar-se a per alguna cosa, girar-se a agafar una bossa— i de sobte l'esquena es bloqueja. Fa mal en moure's, costa redreçar-se i es passen dos o tres dies caminant de costat.",
+        "El que més desconcerta és precisament això: que el gest era ridícul. Ningú entén com acotar-se a recollir un mitjó pot deixar-te així quan el dissabte vas moure una llavadora sense problema.",
+        "L'explicació és que el gest no és la causa. És la gota. El que hi ha darrere és una zona que feia temps que aguantava més del que estava preparada per a aguantar."
+      ]],
+      ["El problema no és l'episodi: és que torna", [
+        "La majoria d'estos episodis es passa en unes setmanes, i això fa que se li lleve importància. El problema és el que ve després.",
+        "Qui s'ha quedat enganxat una vegada té bastants més probabilitats de tornar a quedar-se. I a partir del tercer o el quart comença a instal·lar-se una altra cosa: la sensació de tindre una esquena fràgil, la por a certs moviments, i el costum de deixar de fer coses per si de cas.",
+        "Eixa és la part que de veritat canvia la vida d'algú, i és la que es pot evitar."
+      ]],
+      ["Per què l'exercici de força ho prevé", [
+        "Un teixit que treballa habitualment amb càrrega s'adapta a eixa càrrega. Un que mai la veu, no. És així de simple i és el mecanisme de fons.",
+        "El que fa la força és <strong>pujar el llistó del que la zona tolera abans de protestar</strong>. Si la teua esquena està acostumada a manejar càrrega de manera regular i controlada, el gest tonto d'un dimarts qualsevol es queda molt per davall d'eixe llistó. Si no ho està, eixe mateix gest el supera.",
+        "Per això l'exercici no és només un tractament: és l'única cosa que modifica de veritat la probabilitat que hi haja un pròxim episodi. Un tractament resol el dolor d'ara. La força és el que treballa sobre el de d'ací a sis mesos."
+      ]],
+      ["Quin paper juga l'esport", [
+        "Mantindre's actiu importa, però convé distingir dues coses que es confonen sovint. Caminar, nadar o moure's a diari és bo per molts motius, i ajuda. No és, però, el mateix que entrenar força.",
+        "L'adaptació de què parlem —que el teixit tolere més— necessita càrrega. Això significa treballar amb pes, amb el del propi cos al principi si cal, i anar pujant a poc a poc. Un entrenament que cobrisca cames, maluc i tronc, perquè l'esquena no treballa sola: el que no fan les cames i el maluc acaba fent-ho ella.",
+        "I dues coses que marquen la diferència entre que funcione o no. <strong>Progressar a poc a poc</strong>, perquè les lesions no solen vindre del pes sinó del salt de colp. I <strong>sostindre-ho en el temps</strong>, perquè un programa fet huit setmanes i abandonat deixa l'esquena on estava als pocs mesos. Val més una cosa modesta durant anys que un pla perfecte durant un mes."
+      ]],
+      ["Quan convé que ho mire algú", [
+        "Començar a entrenar pel teu compte quan l'esquena està bé és raonable. Quan hi ha un episodi recent, o un dolor que fa temps que dura, la valoració prèvia és la que determina per on començar i què deixar per a més endavant.",
+        "I hi ha senyals que convé no interpretar pel teu compte: dolor que baixa per la cama per davall del genoll, formigueig o pèrdua de força en el peu, o dolor que no cedix gens en diverses setmanes."
+      ]]
+    ],
+    "faq": [
+      ["Si m'he quedat enganxat, he de guardar repòs?",
+       "Menys del que la gent creu. Mantindre activitat dins del que es tolera sol ajudar més que parar del tot, encara que els primers dies calga baixar el ritme. El que no convé és quedar-se quiet esperant que es passe."],
+      ["Puc entrenar força si ja tinc dolor lumbar?",
+       "En general sí, adaptant què es fa i amb quanta càrrega. El que cal evitar és l'exercici que reproduïx el dolor tal com és, no l'exercici en si. Si l'episodi és recent, convé valorar-ho abans per a saber per on començar."],
+      ["Cal gimnàs?",
+       "No per a començar. Es pot progressar bastant amb el pes del propi cos abans de necessitar material. El que sí que cal és constància i pujar l'exigència a poc a poc: sense això no hi ha adaptació."],
+      ["Quant he d'entrenar perquè servisca?",
+       "Això depén de cada persona i del seu punt de partida, i és part del que es decidix en la valoració. El que sí que està clar és que el determinant no és la intensitat de les primeres setmanes, sinó que continue fent-se d'ací a un any."]
+    ]
+  },
+
+  "en": {
+    "title": "Strength training to prevent recurring low back pain",
+    "description": "Having your back go once is common. Having it go three or four times is no longer bad luck. Why strength training is what stops it coming back.",
+    "h1": "Why strength training keeps your back from going again",
+    "lead": "It is one of the things we repeat most in the treatment room, and one of the hardest to get across: strength training is not only for recovering from back pain. It is, above all, what stops it coming back.",
+    "body": [
+      ["When your back goes", [
+        "The scene is always much the same. Some trivial movement - bending for something, turning to pick up a bag - and suddenly the back locks. It hurts to move, straightening up is hard, and two or three days are spent walking sideways.",
+        "What baffles people most is exactly that: the movement was nothing. Nobody understands how bending to pick up a sock can leave them like this when on Saturday they shifted a washing machine without trouble.",
+        "The explanation is that the movement is not the cause. It is the last straw. Behind it is an area that had been coping with more than it was prepared for."
+      ]],
+      ["The problem is not the episode: it is that it returns", [
+        "Most of these episodes settle within weeks, and that is why they get shrugged off. The problem is what comes afterwards.",
+        "Anyone whose back has gone once is considerably more likely to have it go again. And from the third or fourth time something else starts to set in: the sense of having a fragile back, the fear of certain movements, and the habit of giving things up just in case.",
+        "That is the part that genuinely changes someone's life, and it is the part that can be avoided."
+      ]],
+      ["Why strength training prevents it", [
+        "Tissue that regularly works under load adapts to that load. Tissue that never sees any does not. It is that simple, and it is the mechanism underneath all of this.",
+        "What strength does is <strong>raise the bar of what the area tolerates before it complains</strong>. If your back is used to handling load regularly and under control, the trivial movement on an ordinary Tuesday falls well below that bar. If it is not, that same movement clears it.",
+        "That is why exercise is not just a treatment: it is the only thing that genuinely changes the odds of there being a next episode. Treatment resolves the pain you have now. Strength is what works on the one six months from now."
+      ]],
+      ["Where sport comes in", [
+        "Staying active matters, but two things often get confused. Walking, swimming or simply moving every day is good for many reasons, and it helps. It is not, however, the same as strength training.",
+        "The adaptation we are talking about - tissue tolerating more - needs load. That means working with weight, your own body weight to begin with if necessary, and building up gradually. Training that covers legs, hips and trunk, because the back does not work alone: whatever the legs and hips do not do ends up being done by it.",
+        "And two things decide whether it works. <strong>Progress slowly</strong>, because injuries rarely come from the weight but from the sudden jump. And <strong>keep it going</strong>, because a programme done for eight weeks and abandoned leaves the back where it started within months. Something modest sustained for years beats a perfect plan that lasts one."
+      ]],
+      ["When to have it looked at", [
+        "Starting to train on your own while your back is fine is reasonable. Where there is a recent episode, or pain that has been going on a while, an assessment is what determines where to start and what to leave for later.",
+        "And some signs are best not interpreted alone: pain travelling down the leg below the knee, pins and needles or loss of strength in the foot, or pain that has not eased at all over several weeks."
+      ]]
+    ],
+    "faq": [
+      ["If my back has gone, should I rest?",
+       "Less than people think. Staying active within what you can tolerate usually helps more than stopping altogether, even if the first few days call for a slower pace. What does not help is staying still and waiting for it to pass."],
+      ["Can I do strength training if I already have back pain?",
+       "Generally yes, adapting what you do and how much load. What needs avoiding is the exercise that reproduces the pain as it is, not exercise itself. If the episode is recent, it is worth assessing first to know where to start."],
+      ["Do I need a gym?",
+       "Not to begin with. You can progress a good way with your own body weight before needing equipment. What you do need is consistency and a gradual increase in demand: without that there is no adaptation."],
+      ["How much do I have to train for it to work?",
+       "That depends on the person and their starting point, and it is part of what an assessment decides. What is clear is that what matters is not how hard the first few weeks are, but whether you are still doing it a year from now."]
+    ]
+  }
+}
