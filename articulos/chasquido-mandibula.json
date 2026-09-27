@@ -1,0 +1,130 @@
+{
+  "slug": "chasquido-mandibula",
+  "date": "2026-09-25",
+  "image": "/images/ATM/atm2-copia.jpg",
+  "image_size": [1600, 1082],
+  "image_alt": {
+    "es": "Paciente abriendo la boca frente a un espejo para controlar el movimiento de la mandíbula",
+    "va": "Pacient obrint la boca davant d'un espill per a controlar el moviment de la mandíbula",
+    "en": "A patient opening their mouth in front of a mirror to check the jaw's movement"
+  },
+
+  "_origen": "PRUEBA DEL CIRCUITO. El tema lo propuso Borja para que Mar vea cómo funciona el proceso, no viene de un audio suyo. Se eligió el chasquido y no el dolor matutino porque ese ángulo ya lo cubre el artículo «Me duele la mandíbula al despertar» y duplicarlo sería competir contra la propia web.",
+
+  "es": {
+    "title": "Me cruje la mandíbula al abrir la boca, ¿es grave?",
+    "description": "El chasquido al abrir la boca asusta más de lo que debería. Qué es realmente, cuándo no significa nada y cuándo sí conviene que lo mire alguien.",
+    "h1": "Me cruje la mandíbula al abrir la boca",
+    "lead": "Es de las cosas que más preocupan y de las que menos suelen ser un problema. Mucha gente convive años con un clic al abrir la boca sin que llegue a pasar nada, y otra tanta llega a consulta convencida de que tiene la mandíbula rota.",
+    "body": [
+      ["Qué es ese ruido", [
+        "Entre el hueso de la mandíbula y el del cráneo hay un pequeño disco de cartílago que hace de amortiguador. Cuando abres la boca, ese disco se desliza acompañando al movimiento.",
+        "Si por lo que sea el disco se adelanta un poco y la mandíbula lo alcanza a mitad del recorrido, se produce el chasquido. Eso es todo: no es un hueso que roza, ni algo que se descoloca, ni una articulación que se rompe. Es una pieza que se recoloca al pasar.",
+        "Por eso el ruido suele oírse siempre en el mismo punto de la apertura, y por eso a veces aparece también al cerrar."
+      ]],
+      ["Cuándo no significa nada", [
+        "Un chasquido aislado, sin dolor, que no limita la apertura y que no va a más, es un hallazgo muy común. Se estima que una parte importante de la población lo tiene, y la mayoría no desarrolla ningún problema.",
+        "En esos casos el tratamiento no es tratar el ruido. Intentar quitar un chasquido que no molesta suele ser perseguir un síntoma que no es el problema, y a veces genera más atención sobre la zona de la que conviene.",
+        "Dicho de otro modo: si solo hace clic, probablemente no haya nada que arreglar."
+      ]],
+      ["Cuándo sí conviene mirarlo", [
+        "Lo que cambia las cosas no es el ruido, es lo que lo acompaña. Merece una valoración cuando el chasquido viene con dolor al masticar o al abrir, cuando la boca abre menos que antes, cuando el ruido ha cambiado de sitio o de intensidad en poco tiempo, o cuando la mandíbula se desvía hacia un lado al abrir.",
+        "Y hay una señal que sí conviene no dejar pasar: <strong>el bloqueo</strong>. Ese momento en que la boca se queda encallada y cuesta abrirla o cerrarla. Si eso empieza a ocurrir, aunque dure segundos, es el aviso de que el disco ya no está solo haciendo ruido.",
+        "También merece consultar el chasquido que aparece de golpe después de algo concreto: una visita larga al dentista, un golpe, una extracción."
+      ]],
+      ["Qué ayuda mientras tanto", [
+        "Lo primero, y no es un consejo menor: dejar de comprobarlo. Es muy habitual pasarse el día abriendo y cerrando la boca para ver si sigue sonando. Eso no aporta información y sí mantiene la zona irritada.",
+        "Más allá de eso, lo que suele sentar bien es reducir el trabajo de la articulación mientras se calma: evitar los alimentos muy duros o muy correosos, no abrir la boca al máximo cuando no hace falta, y aflojar la costumbre de apretar los dientes durante el día, que mucha gente descubre que tiene cuando empieza a fijarse.",
+        "Si además hay dolor o limitación, ahí ya sí hay algo que tratar, y el tratamiento suele combinar trabajo sobre los músculos masticadores y sobre las cervicales altas, que en esta zona van siempre de la mano."
+      ]]
+    ],
+    "faq": [
+      ["¿El chasquido se puede quitar?",
+       "No siempre, y no siempre hace falta. Lo que sí se puede mejorar es el dolor, la apertura y el control del movimiento. En algunos casos el ruido desaparece al hacerlo; en otros se queda y deja de importar, porque ya no molesta."],
+      ["¿Es artrosis?",
+       "Casi nunca. La artrosis de esta articulación existe, pero suena distinto: es un roce continuo, como arenilla, no un clic seco. Y aparece en un contexto y a unas edades diferentes. Un chasquido limpio en una persona joven rara vez tiene que ver con eso."],
+      ["¿Me tengo que hacer una radiografía?",
+       "Para un chasquido aislado, no. La radiografía ve hueso, y aquí lo que se mueve es un disco de cartílago que no sale en ella. Cuando hace falta imagen, la prueba adecuada es otra, y eso lo decide el profesional que corresponda."],
+      ["¿Tiene que ver con el estrés?",
+       "Puede influir, sobre todo por la tensión muscular y por apretar los dientes, pero el chasquido en sí es un asunto mecánico del disco. Decir que es solo estrés simplifica algo que suele tener varias causas a la vez."]
+    ]
+  },
+
+  "va": {
+    "title": "Em cruix la mandíbula en obrir la boca, és greu?",
+    "description": "El cruixit en obrir la boca espanta més del que hauria. Què és realment, quan no significa res i quan sí que convé que ho mire algú.",
+    "h1": "Em cruix la mandíbula en obrir la boca",
+    "lead": "És de les coses que més preocupen i de les que menys solen ser un problema. Molta gent conviu anys amb un clic en obrir la boca sense que arribe a passar res, i una altra tanta arriba a consulta convençuda que té la mandíbula trencada.",
+    "body": [
+      ["Què és eixe soroll", [
+        "Entre l'os de la mandíbula i el del crani hi ha un xicotet disc de cartílag que fa d'amortidor. Quan obris la boca, eixe disc es llisca acompanyant el moviment.",
+        "Si per lo que siga el disc s'avança una mica i la mandíbula l'abasta a mitjan recorregut, es produïx el cruixit. Això és tot: no és un os que frega, ni alguna cosa que es descol·loca, ni una articulació que es trenca. És una peça que es recol·loca en passar.",
+        "Per això el soroll sol sentir-se sempre en el mateix punt de l'obertura, i per això de vegades apareix també en tancar."
+      ]],
+      ["Quan no significa res", [
+        "Un cruixit aïllat, sense dolor, que no limita l'obertura i que no va a més, és una troballa molt comuna. S'estima que una part important de la població el té, i la majoria no desenvolupa cap problema.",
+        "En eixos casos el tractament no és tractar el soroll. Intentar llevar un cruixit que no molesta sol ser perseguir un símptoma que no és el problema, i de vegades genera més atenció sobre la zona de la que convé.",
+        "Dit d'una altra manera: si només fa clic, probablement no hi haja res a arreglar."
+      ]],
+      ["Quan sí que convé mirar-ho", [
+        "El que canvia les coses no és el soroll, és el que l'acompanya. Mereix una valoració quan el cruixit ve amb dolor en mastegar o en obrir, quan la boca obri menys que abans, quan el soroll ha canviat de lloc o d'intensitat en poc de temps, o quan la mandíbula es desvia cap a un costat en obrir.",
+        "I hi ha un senyal que sí que convé no deixar passar: <strong>el bloqueig</strong>. Eixe moment en què la boca es queda encallada i costa obrir-la o tancar-la. Si això comença a ocórrer, encara que dure segons, és l'avís que el disc ja no està només fent soroll.",
+        "També mereix consultar el cruixit que apareix de colp després d'alguna cosa concreta: una visita llarga al dentista, un colp, una extracció."
+      ]],
+      ["Què ajuda mentrestant", [
+        "El primer, i no és un consell menor: deixar de comprovar-ho. És molt habitual passar-se el dia obrint i tancant la boca per a veure si continua sonant. Això no aporta informació i sí que manté la zona irritada.",
+        "Més enllà d'això, el que sol sentar bé és reduir el treball de l'articulació mentre es calma: evitar els aliments molt durs o molt corretjosos, no obrir la boca al màxim quan no cal, i afluixar el costum de pitjar les dents durant el dia, que molta gent descobrix que té quan comença a fixar-se.",
+        "Si a més hi ha dolor o limitació, ahí ja sí que hi ha alguna cosa a tractar, i el tractament sol combinar treball sobre els músculs masticadors i sobre les cervicals altes, que en esta zona van sempre de la mà."
+      ]]
+    ],
+    "faq": [
+      ["El cruixit es pot llevar?",
+       "No sempre, i no sempre cal. El que sí que es pot millorar és el dolor, l'obertura i el control del moviment. En alguns casos el soroll desapareix en fer-ho; en altres es queda i deixa d'importar, perquè ja no molesta."],
+      ["És artrosi?",
+       "Quasi mai. L'artrosi d'esta articulació existix, però sona distint: és un frec continu, com arenilla, no un clic sec. I apareix en un context i a unes edats diferents. Un cruixit net en una persona jove poques vegades té a veure amb això."],
+      ["M'he de fer una radiografia?",
+       "Per a un cruixit aïllat, no. La radiografia veu os, i ací el que es mou és un disc de cartílag que no ix en ella. Quan cal imatge, la prova adequada és una altra, i això ho decidix el professional que corresponga."],
+      ["Té a veure amb l'estrés?",
+       "Pot influir, sobretot per la tensió muscular i per pitjar les dents, però el cruixit en si és un assumpte mecànic del disc. Dir que és només estrés simplifica una cosa que sol tindre diverses causes alhora."]
+    ]
+  },
+
+  "en": {
+    "title": "My jaw clicks when I open my mouth. Is it serious?",
+    "description": "A clicking jaw worries people more than it should. What the noise actually is, when it means nothing, and when it is worth having looked at.",
+    "h1": "My jaw clicks when I open my mouth",
+    "lead": "It is one of the things that worries people most and is least often a problem. Many live for years with a click on opening without anything ever coming of it, and just as many arrive at the clinic convinced their jaw is broken.",
+    "body": [
+      ["What the noise is", [
+        "Between the jawbone and the skull sits a small cartilage disc that acts as a cushion. When you open your mouth, that disc glides along with the movement.",
+        "If for whatever reason the disc sits slightly forward and the jaw catches up with it partway through, you get the click. That is all it is: not bone rubbing, not something slipping out of place, not a joint breaking. It is a part settling back as it passes.",
+        "That is why the noise tends to happen at the same point in the opening every time, and why it sometimes occurs on closing too."
+      ]],
+      ["When it means nothing", [
+        "An isolated click, with no pain, that does not limit how far the mouth opens and is not getting worse, is a very common finding. A substantial share of the population has one, and most never develop any problem from it.",
+        "In those cases the treatment is not to treat the noise. Trying to get rid of a click that is not bothering anyone usually means chasing a symptom that is not the problem, and it can draw more attention to the area than is helpful.",
+        "Put simply: if it only clicks, there is probably nothing to fix."
+      ]],
+      ["When it is worth looking at", [
+        "What changes things is not the noise but what comes with it. It deserves an assessment when the click comes with pain on chewing or opening, when the mouth opens less far than it used to, when the noise has changed position or loudness over a short time, or when the jaw veers to one side as it opens.",
+        "And one sign should not be ignored: <strong>locking</strong>. That moment when the mouth gets stuck and is hard to open or close. If that starts happening, even for seconds, it is the warning that the disc is no longer just making a noise.",
+        "A click that appears suddenly after something specific is also worth checking: a long dental appointment, a knock, an extraction."
+      ]],
+      ["What helps in the meantime", [
+        "First, and this is not a minor point: stop checking it. It is very common to spend the day opening and closing the mouth to see whether it still clicks. That provides no information and does keep the area irritated.",
+        "Beyond that, what usually helps is easing the joint's workload while it settles: avoiding very hard or very chewy food, not opening the mouth to its limit when there is no need, and loosening the habit of clenching during the day, which many people discover they have once they start paying attention.",
+        "If there is pain or restriction as well, then there is something to treat, and treatment usually combines work on the chewing muscles and on the upper neck, which in this area always go together."
+      ]]
+    ],
+    "faq": [
+      ["Can the clicking be got rid of?",
+       "Not always, and not always necessary. What can be improved is the pain, the opening and the control of the movement. In some cases the noise goes as that happens; in others it stays and stops mattering, because it no longer bothers anyone."],
+      ["Is it arthritis?",
+       "Almost never. Arthritis of this joint exists, but it sounds different: a continuous grating, like grit, not a clean click. And it appears in a different context and at different ages. A clean click in a young person rarely has anything to do with it."],
+      ["Do I need an X-ray?",
+       "For an isolated click, no. X-rays show bone, and what moves here is a cartilage disc that does not appear on one. When imaging is needed, a different test is the right one, and that is decided by the appropriate professional."],
+      ["Is it related to stress?",
+       "It can play a part, mainly through muscle tension and clenching, but the click itself is a mechanical matter of the disc. Calling it only stress oversimplifies something that usually has several causes at once."]
+    ]
+  }
+}

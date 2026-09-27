@@ -208,6 +208,8 @@
             }
         },
         /* --- blog: generado por tools/publicar-articulo.py, no editar a mano --- */
+        { url: '/blog/chasquido-mandibula', title: { es: 'Me cruje la mandíbula al abrir la boca', va: 'Em cruix la mandíbula en obrir la boca', en: 'My jaw clicks when I open my mouth' },
+          keywords: { es: ['cruje', 'mandibula', 'abrir', 'boca', 'grave', 'ruido', 'cuando', 'significa', 'conviene', 'mirarlo', 'ayuda', 'mientras'], va: ['cruix', 'mandibula', 'obrir', 'boca', 'greu', 'soroll', 'significa', 'conve', 'mirar', 'ajuda', 'mentrestant'], en: ['clicks', 'when', 'open', 'mouth', 'serious', 'noise', 'means', 'nothing', 'worth', 'looking', 'helps', 'meantime'] } },
         { url: '/blog/dolor-mandibula-al-despertar', title: { es: 'Me duele la mandíbula al despertar', va: 'Em fa mal la mandíbula en despertar', en: 'Waking up with jaw pain' },
           keywords: { es: ['duele', 'mandibula', 'despertar', 'pasa', 'hacer', 'pasando', 'mientras', 'duermes', 'donde', 'esperabas', 'nunca', 'funciona'], va: ['mandibula', 'despertar', 'passa', 'mentre', 'dorms', 'esperaves', 'quasi', 'funciona', 'conve'], en: ['waking', 'with', 'pain', 'happens', 'what', 'helps', 'happening', 'while', 'sleep', 'hurts', 'where', 'expect'] } },
         { url: '/blog/entrenar-con-contractura', title: { es: '¿Puedo entrenar con una contractura?', va: 'Puc entrenar amb una contractura?', en: 'Can I train with a muscle knot?' },
