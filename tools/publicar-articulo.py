@@ -528,9 +528,15 @@ def actualizar_buscador(posts):
             palabras = re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{4,}', a['title'].lower())
             for h, _ in a['body']:
                 palabras += re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{5,}', h.lower())
+            # strip accents: the search normalises them anyway, but every
+            # keyword the theme wrote is unaccented and two styles in one file
+            # is just something for the next reader to wonder about
+            import unicodedata
             vistos = []
             for w in palabras:
-                if w not in vistos:
+                w = ''.join(c for c in unicodedata.normalize('NFD', w)
+                            if unicodedata.category(c) != 'Mn')
+                if w and w not in vistos:
                     vistos.append(w)
             kw[lang] = vistos[:12]
         filas.append(
