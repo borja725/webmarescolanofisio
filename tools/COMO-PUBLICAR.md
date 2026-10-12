@@ -1,0 +1,253 @@
+# Publicar un artículo del blog
+
+Manual operativo. Lo que hace Borja desde que Mar manda el audio hasta que el
+artículo está en la web.
+
+La guía de Mar es el documento 3 de la carpeta `Docs`. Este es el otro lado del
+proceso: el de quien lo ejecuta.
+
+---
+
+## Antes de la primera vez
+
+Necesitas tres cosas instaladas y una comprobación hecha.
+
+| Qué | Para qué | Comprobar con |
+|---|---|---|
+| Git | bajar y subir cambios | `git --version` |
+| Python 3 | ejecutar el generador | `python --version` |
+| Claude Code | el agente | `claude --version` |
+
+Y el repositorio clonado:
+
+```bash
+git clone https://github.com/borja725/webmarescolanofisio.git
+cd webmarescolanofisio
+```
+
+**Las vistas previa por rama ya funcionan.** Hizo falta añadir un bloque
+`[previews]` a `wrangler.toml`: es lo que exige `wrangler preview`, el comando
+que Cloudflare usa para construir una rama. El de producción es `deploy`, que
+no lo necesitaba, y por eso `master` desplegaba bien mientras las ramas
+fallaban.
+
+---
+
+## El ciclo, de principio a fin
+
+### 1. Llega el audio de Mar
+
+Por WhatsApp, en la conversación de siempre. No tiene que estar ordenado ni ser
+largo: dos o tres minutos hablando como hablaría en consulta.
+
+Transcríbelo o quédate con las ideas. Da igual el formato: lo que importa es que
+llegue **entero**, con sus ejemplos y sus matices, porque eso es exactamente lo
+que el agente no puede inventar.
+
+### 2. Prepara la rama
+
+```bash
+cd ruta/a/webmarescolanofisio
+git checkout master
+git pull
+git checkout -b post/nombre-corto-del-tema
+```
+
+El nombre de la rama da igual mientras empiece por `post/` y se entienda.
+
+### 3. Arranca el agente
+
+```bash
+claude
+```
+
+Y le pasas el encargo. Puedes copiar esto tal cual y rellenar las dos partes de
+abajo:
+
+```
+Escribe un artículo nuevo para el blog siguiendo el proceso que ya está montado
+en este repositorio.
+
+Lo que ha contado Mar (fisioterapeuta, es quien firma el artículo):
+
+    [PEGA AQUÍ EL AUDIO TRANSCRITO O LAS IDEAS]
+
+Instrucciones:
+- Lee tools/publicar-articulo.py para el formato exacto del JSON.
+- Mira articulos/*.json como ejemplo del tono y la estructura.
+- Escribe el artículo en castellano, valenciano e inglés.
+- NO inventes número de sesiones, duración ni precios: eso no lo sabemos.
+- Las contraindicaciones nunca como lista cerrada: nombra los casos claros y
+  remite a la valoración previa.
+- Usa lo que ha contado Mar como eje del artículo, no como adorno.
+- Elige una foto que ya exista en images/ y comprueba sus dimensiones reales.
+- Cuando termines, ejecuta el generador y su comprobación.
+```
+
+El agente creará `articulos/<slug>.json` y ejecutará por su cuenta:
+
+```bash
+python tools/publicar-articulo.py articulos/<slug>.json
+python tools/publicar-articulo.py --comprobar
+```
+
+**La comprobación tiene que decir `problemas: 0`.** Si dice otra cosa, no sigas:
+pídele que lo arregle.
+
+### 4. Míralo tú antes que Mar
+
+```bash
+python serve.py
+```
+
+Y abre en el navegador:
+
+```
+http://localhost:8000/blog.html
+http://localhost:8000/blog/<slug>.html
+```
+
+Aquí no revisas lo clínico —eso es de Mar— sino que **la página esté bien**: que
+la foto cargue, que el texto no se corte, que los tres idiomas existan.
+
+Para parar el servidor, `Ctrl+C`.
+
+### 5. Sube la rama y consigue el enlace
+
+```bash
+git add -A
+git commit -m "post: título del artículo"
+git push -u origin post/nombre-corto-del-tema
+```
+
+Y ya está: **no tienes que hacer nada más**. Cloudflare construye la rama sola
+y deja la dirección en un comentario del Pull Request, con esta forma:
+
+```
+https://post-nombre-de-tu-rama-webmarescolanofisio.borja105702.workers.dev
+```
+
+Ahí se ve el artículo tal y como quedaría publicado. **La web pública sigue sin
+tocar.**
+
+> **La dirección es estable.** Depende del nombre de la rama, no de la versión,
+> así que si Mar pide cambios y vuelves a subir, el enlace sigue siendo el
+> mismo y se actualiza solo. No hace falta reenviarlo.
+
+Si por lo que sea el comentario no aparece, puedes generar una dirección
+temporal a mano:
+
+```bash
+CLOUDFLARE_ACCOUNT_ID=385070a667d44e014092ce47b75ff21d npx wrangler versions upload
+```
+
+Esa sí cambia en cada versión, así que es una salida de emergencia, no el
+camino habitual.
+
+### 6. Mándale el enlace a Mar
+
+Por WhatsApp, la misma conversación. Con eso ya puede leerlo en el móvil.
+
+A partir de aquí decide ella.
+
+---
+
+## Si Mar pide cambios
+
+Vuelve al paso 3 **sin crear rama nueva**: ya estás en ella.
+
+```bash
+claude
+```
+
+```
+Mar ha revisado el artículo y pide estos cambios:
+
+    [LO QUE HA DICHO, CON SUS PALABRAS]
+
+Ajústalo, vuelve a generar las páginas y comprueba.
+```
+
+Después repite el paso 5. El enlace de la vista previa **es el mismo**: al
+estar ligado a la rama, se actualiza solo con el nuevo contenido. No hace falta
+mandarle uno nuevo, aunque avisarla ayuda.
+
+---
+
+## Si Mar dice que sí
+
+```bash
+git checkout master
+git merge --no-ff post/nombre-corto-del-tema
+git push origin master
+```
+
+En dos o tres minutos está publicado. Compruébalo:
+
+```
+https://marescolanofisioterapia.com/blog
+```
+
+Y borra la rama, que ya no hace falta:
+
+```bash
+git branch -d post/nombre-corto-del-tema
+git push origin --delete post/nombre-corto-del-tema
+```
+
+---
+
+## Si algo va mal
+
+**El artículo ya está publicado y hay que quitarlo.**
+
+```bash
+git revert -m 1 HEAD
+git push origin master
+```
+
+Eso deshace la publicación dejando constancia de lo que pasó. En dos minutos ha
+desaparecido de la web.
+
+**La comprobación da problemas.** Léelos: dicen exactamente qué falta. Suele ser
+una imagen que no existe o un idioma incompleto. Pásaselos al agente.
+
+**El despliegue no termina.** Mira en el panel de Cloudflare si el build ha
+fallado o si os habéis quedado sin minutos de compilación. Ya pasó una vez.
+
+**No aparece la vista previa.** Es lo que hay que confirmar antes de empezar
+(arriba del todo). Mientras no esté, Mar no puede revisar y no se debe publicar.
+
+---
+
+## Referencia rápida
+
+```bash
+# empezar
+git checkout master && git pull
+git checkout -b post/tema
+
+# el agente hace su trabajo, y luego
+python tools/publicar-articulo.py --comprobar   # tiene que decir: problemas: 0
+python serve.py                                  # mirar en localhost:8000
+
+# subir para que Mar lo vea
+git add -A && git commit -m "post: título" && git push -u origin post/tema
+# Cloudflare deja el enlace en un comentario del Pull Request
+
+# publicar, cuando Mar diga que sí
+git checkout master && git merge --no-ff post/tema && git push origin master
+
+# deshacer, si hiciera falta
+git revert -m 1 HEAD && git push origin master
+```
+
+---
+
+## Lo único que no se puede saltar
+
+El artículo **no se publica sin que Mar lo haya leído y lo haya dicho**. No es
+burocracia: sale firmado con su nombre y su número de colegiada, y si hay algo
+impreciso responde ella.
+
+El resto del proceso se puede improvisar. Esto no.
