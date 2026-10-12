@@ -209,7 +209,7 @@
         },
         /* --- blog: generado por tools/publicar-articulo.py, no editar a mano --- */
         { url: '/blog/chasquido-mandibula', title: { es: '¿Te cruje la mandíbula al abrir la boca? Qué significa ese ruido y cuándo conviene tratarlo', va: 'Et cruix la mandíbula en obrir la boca? Què significa eixe soroll i quan convé tractar-lo', en: 'Does your jaw click when you open your mouth? What the noise means and when it is worth treating' },
-          keywords: { es: ['cruje', 'mandibula', 'abrir', 'boca', 'cuando', 'normal', 'tratarlo', 'fisioterapia', 'gandia', 'ruido', 'significa', 'identificas'], va: ['cruix', 'mandibula', 'obrir', 'boca', 'quan', 'normal', 'tractar', 'fisioterapia', 'gandia', 'soroll', 'significa', 'identifiques'], en: ['does', 'your', 'click', 'when', 'open', 'mouth', 'normal', 'treat', 'physiotherapy', 'gandia', 'noise', 'means'] } },
+          keywords: { es: ['chasquido', 'chasquidos', 'cruje', 'mandibula', 'abrir', 'boca', 'cuando', 'normal', 'tratarlo', 'fisioterapia', 'gandia', 'ruido'], va: ['cruix', 'mandibula', 'obrir', 'boca', 'quan', 'normal', 'tractar', 'fisioterapia', 'gandia', 'soroll', 'significa', 'identifiques'], en: ['does', 'your', 'click', 'when', 'open', 'mouth', 'normal', 'treat', 'physiotherapy', 'gandia', 'noise', 'means'] } },
         /* --- fin del blog --- */
 ];
 

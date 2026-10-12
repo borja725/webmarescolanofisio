@@ -89,7 +89,10 @@ def rich(t):
     t = re.sub(r'\*\*(.+?)\*\*', lambda m: '<strong>' + m.group(1) + '</strong>', t)
     t = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)',
                # esc() leaves quotes alone, so close that gap for the attribute
-               lambda m: '<a href="%s">%s</a>' % (m.group(2).replace('"', '&quot;'), m.group(1)), t)
+               # the theme strips underlines from links; in running text a link
+               # must look like one, or the reader never knows it goes anywhere
+               lambda m: '<a href="%s" style="text-decoration:underline">%s</a>'
+               % (m.group(2).replace('"', '&quot;'), m.group(1)), t)
     return t
 
 
@@ -558,7 +561,10 @@ def actualizar_buscador(posts):
         kw = {}
         for lang in LANGS:
             a = post[lang]
-            palabras = re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{4,}', a['title'].lower())
+            # optional hand-picked terms go first so the 12-word cap never
+            # drops them: words a reader types but the title never uses
+            palabras = [w.lower() for w in a.get('keywords', [])]
+            palabras += re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{4,}', a['title'].lower())
             for h, _ in a['body']:
                 palabras += re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{5,}', h.lower())
             # strip accents: the search normalises them anyway, but every
