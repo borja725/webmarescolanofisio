@@ -257,9 +257,9 @@
     var LANG = activeLang();
 
     var UI = {
-        es: { placeholder: 'Buscar...', label: 'Buscar en la web', empty: 'Sin resultados' },
-        va: { placeholder: 'Cercar...', label: 'Cercar en la web', empty: 'Sense resultats' },
-        en: { placeholder: 'Search...', label: 'Search the site', empty: 'No results' }
+        es: { placeholder: 'Buscar', label: 'Buscar en la web', empty: 'Sin resultados' },
+        va: { placeholder: 'Cercar', label: 'Cercar en la web', empty: 'Sense resultats' },
+        en: { placeholder: 'Search', label: 'Search the site', empty: 'No results' }
     };
 
     var T = UI[LANG];
@@ -474,7 +474,10 @@
         '.site-search__toggle:hover,.site-search__toggle:focus-visible{border-color:rgba(35,35,35,.85);outline:none}',
         '.white-link .site-search__toggle{border-color:rgba(255,255,255,.55)}',
         '.white-link .site-search__toggle:hover,.white-link .site-search__toggle:focus-visible{border-color:#fff}',
-        '.site-search__input{position:absolute;right:0;top:0;z-index:2;width:34px;',
+        // `max-width:none` is load-bearing: the theme caps every input at
+        // `max-width:100%`, and for this absolutely positioned field 100% means
+        // the 34px form, which would clamp the open field to the magnifier.
+        '.site-search__input{position:absolute;right:0;top:0;z-index:2;width:34px;max-width:none;',
         'background:#fff;opacity:0;visibility:hidden;transition:width .25s ease,opacity .2s ease,border-color .25s ease}',
         '.white-link .site-search__input{background:rgba(0,0,0,.35);',
         '-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}',
