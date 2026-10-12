@@ -423,15 +423,21 @@
         // widening the field on focus overflows the row and drops the search
         // box onto a second line. Focus is signalled with the border instead.
         '.site-search__input:focus{border-color:rgba(35,35,35,.85)}',
-        '.site-search__icon{position:absolute;right:13px;top:50%;transform:translateY(-50%);',
-        'color:#232323;opacity:.7;font-size:12px;pointer-events:none}',
+        // The magnifier is a real button: on desktop it is the only visible part
+        // of the widget until clicked, and it opens the field (see below).
+        '.site-search__toggle{position:absolute;right:0;top:0;z-index:3;display:flex;',
+        'align-items:center;justify-content:center;width:34px;height:34px;margin:0;padding:0;',
+        'border:1px solid transparent;border-radius:50%;background:transparent;',
+        'color:#232323;cursor:pointer;transition:border-color .25s ease}',
+        '.site-search__icon{opacity:.7;font-size:12px;pointer-events:none}',
         // bootsnav marks the light-over-photo navbar with `.white-link` (the home
         // page) and leaves it off everywhere else. Mirroring that flag is what
         // keeps the field readable on both, instead of white-on-white.
         '.white-link .site-search__input{color:#fff;border-color:rgba(255,255,255,.55)}',
         '.white-link .site-search__input::placeholder{color:#fff;opacity:.8}',
         '.white-link .site-search__input:focus{border-color:#fff}',
-        '.white-link .site-search__icon{color:#fff;opacity:.9}',
+        '.white-link .site-search__toggle{color:#fff}',
+        '.white-link .site-search__icon{opacity:.9}',
         // The results panel has no solid fill, only a tint plus a blur of whatever
         // is behind it. A fully transparent panel would leave the links sitting
         // straight on the photo and unreadable.
@@ -457,10 +463,31 @@
         // also drops its `.white-link` colours, which would be white-on-white.
         // Desktop only: the collapsed mobile menu keeps its dark background.
         '@media (min-width:992px){',
-        'header.sticky .white-link .site-search__input{color:#232323;border-color:rgba(35,35,35,.35)}',
+        // Collapsed by default: only the round magnifier takes room in the menu
+        // row. The field opens leftwards as an absolutely positioned overlay, so
+        // it never adds width to the row and can never wrap it onto a second
+        // line, however many tabs the menu grows. While open it sits on top of
+        // the neighbouring links, hence the solid (or tinted) background.
+        '.site-search{z-index:5}',
+        '.site-search__form{width:34px}',
+        '.site-search__toggle{border-color:rgba(35,35,35,.35)}',
+        '.site-search__toggle:hover,.site-search__toggle:focus-visible{border-color:rgba(35,35,35,.85);outline:none}',
+        '.white-link .site-search__toggle{border-color:rgba(255,255,255,.55)}',
+        '.white-link .site-search__toggle:hover,.white-link .site-search__toggle:focus-visible{border-color:#fff}',
+        '.site-search__input{position:absolute;right:0;top:0;z-index:2;width:34px;',
+        'background:#fff;opacity:0;visibility:hidden;transition:width .25s ease,opacity .2s ease,border-color .25s ease}',
+        '.white-link .site-search__input{background:rgba(0,0,0,.35);',
+        '-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}',
+        '.site-search.is-expanded .site-search__input{width:220px;opacity:1;visibility:visible}',
+        '.site-search.is-expanded .site-search__toggle{border-color:transparent}',
+        '.site-search__results{left:auto;right:0}',
+        'header.sticky .white-link .site-search__input{color:#232323;border-color:rgba(35,35,35,.35);',
+        'background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none}',
         'header.sticky .white-link .site-search__input::placeholder{color:#232323;opacity:.7}',
         'header.sticky .white-link .site-search__input:focus{border-color:rgba(35,35,35,.85)}',
-        'header.sticky .white-link .site-search__icon{color:#232323;opacity:.7}',
+        'header.sticky .white-link .site-search__toggle{color:#232323;border-color:rgba(35,35,35,.35)}',
+        'header.sticky .white-link .site-search__icon{opacity:.7}',
+        'header.sticky .white-link .site-search.is-expanded .site-search__toggle{border-color:transparent}',
         'header.sticky .site-search__results{background:rgba(255,255,255,.55);border-color:rgba(35,35,35,.35)}',
         'header.sticky .site-search__results a,header.sticky .site-search__empty{color:#232323}',
         'header.sticky .site-search__results a:hover,header.sticky .site-search__results li.is-active a{background:rgba(35,35,35,.08);color:#000}',
@@ -493,7 +520,10 @@
                 '<input type="search" class="site-search__input" placeholder="' + T.placeholder + '"' +
                     ' aria-label="' + T.label + '" autocomplete="off" role="combobox"' +
                     ' aria-expanded="false" aria-controls="site-search-results">' +
-                '<i class="fas fa-search site-search__icon" aria-hidden="true"></i>' +
+                '<button type="button" class="site-search__toggle" aria-label="' + T.label + '"' +
+                    ' aria-expanded="false">' +
+                    '<i class="fas fa-search site-search__icon" aria-hidden="true"></i>' +
+                '</button>' +
             '</div>' +
             '<ul class="site-search__results" id="site-search-results" role="listbox"></ul>';
 
@@ -516,6 +546,7 @@
 
         var input = widget.querySelector('.site-search__input');
         var list = widget.querySelector('.site-search__results');
+        var toggle = widget.querySelector('.site-search__toggle');
         var current = [];
         var activeIndex = -1;
 
@@ -524,6 +555,43 @@
             input.setAttribute('aria-expanded', 'false');
             activeIndex = -1;
         }
+
+        // The expanded state only changes the layout on desktop; in the mobile
+        // menu the field is always visible and the class is harmless.
+        function expand() {
+            widget.classList.add('is-expanded');
+            toggle.setAttribute('aria-expanded', 'true');
+            input.focus();
+        }
+
+        function collapse() {
+            close();
+            widget.classList.remove('is-expanded');
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+
+        // Safari and Firefox on macOS do not focus a button on click, so the
+        // input would blur with no relatedTarget, `focusout` would collapse the
+        // widget, and this click would then reopen it. Keeping focus where it is
+        // lets the click handler see the real state.
+        toggle.addEventListener('mousedown', function (event) {
+            event.preventDefault();
+        });
+
+        toggle.addEventListener('click', function () {
+            if (widget.classList.contains('is-expanded') && !input.value.trim()) {
+                collapse();
+            } else {
+                expand();
+            }
+        });
+
+        // Tabbing out of an empty field folds it back into the magnifier.
+        widget.addEventListener('focusout', function (event) {
+            if (!widget.contains(event.relatedTarget) && !input.value.trim()) {
+                collapse();
+            }
+        });
 
         function highlight(index) {
             var items = list.querySelectorAll('li');
@@ -585,8 +653,8 @@
 
         input.addEventListener('keydown', function (event) {
             if (event.key === 'Escape') {
-                close();
-                input.blur();
+                collapse();
+                toggle.focus();
                 return;
             }
 
@@ -615,7 +683,7 @@
 
         document.addEventListener('click', function (event) {
             if (!widget.contains(event.target)) {
-                close();
+                collapse();
             }
         });
 
