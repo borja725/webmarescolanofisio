@@ -82,6 +82,36 @@ def esc(t):
     return html.escape(t, quote=False)
 
 
+def rich(t):
+    """Escape, then allow two bits of inline markup in body text: **bold** and
+    [label](/path). Escaping first means nothing else can sneak in."""
+    t = esc(t)
+    t = re.sub(r'\*\*(.+?)\*\*', lambda m: '<strong>' + m.group(1) + '</strong>', t)
+    t = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)',
+               # esc() leaves quotes alone, so close that gap for the attribute
+               # the theme strips underlines from links; in running text a link
+               # must look like one, or the reader never knows it goes anywhere
+               lambda m: '<a href="%s" style="text-decoration:underline">%s</a>'
+               % (m.group(2).replace('"', '&quot;'), m.group(1)), t)
+    return t
+
+
+def paras_html(paras):
+    """A body block is a list of paragraphs; an item that is itself a list is
+    rendered as a bulleted list."""
+    out = []
+    for t in paras:
+        if isinstance(t, list):
+            out.append('                <ul style="list-style:disc outside;padding-left:22px;'
+                       'margin-bottom:20px">')
+            for li in t:
+                out.append('                    <li style="margin-bottom:6px">%s</li>' % rich(li))
+            out.append('                </ul>')
+        else:
+            out.append('                <p align="justify">%s</p>' % rich(t))
+    return out
+
+
 def att(t):
     return html.escape(t, quote=True)
 
@@ -109,7 +139,13 @@ def pretty_date(iso, lang):
 
 
 def read_minutes(body):
-    words = sum(len(' '.join(p).split()) for _, p in body)
+    def flat(ps):
+        for t in ps:
+            if isinstance(t, list):
+                yield from t
+            else:
+                yield t
+    words = sum(len(' '.join(flat(p)).split()) for _, p in body)
     return max(1, round(words / 200))
 
 
@@ -237,7 +273,7 @@ def body_html(post, lang):
     out.append('                <p class="text-medium-gray" style="font-size:14px">%s %s &middot; %s &middot; %d %s</p>'
                % (BY[lang], esc(AUTHOR), pretty_date(post['date'], lang),
                   read_minutes(p['body']), READ[lang]))
-    out.append('                <p align="justify"><strong>%s</strong></p>' % esc(p['lead']))
+    out.append('                <p align="justify"><strong>%s</strong></p>' % rich(p['lead']))
     out.append('            </div>')
     out.append('        </div>')
 
@@ -254,9 +290,9 @@ def body_html(post, lang):
     for h, paras in p['body']:
         out.append('        <div class="row justify-content-center">')
         out.append('            <div class="%s">' % COL)
-        out.append('                <h2 class="%s">%s</h2>' % (H2, esc(h)))
-        for t in paras:
-            out.append('                <p align="justify">%s</p>' % esc(t))
+        if h:
+            out.append('                <h2 class="%s">%s</h2>' % (H2, esc(h)))
+        out.extend(paras_html(paras))
         out.append('            </div>')
         out.append('        </div>')
 
@@ -525,7 +561,10 @@ def actualizar_buscador(posts):
         kw = {}
         for lang in LANGS:
             a = post[lang]
-            palabras = re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{4,}', a['title'].lower())
+            # optional hand-picked terms go first so the 12-word cap never
+            # drops them: words a reader types but the title never uses
+            palabras = [w.lower() for w in a.get('keywords', [])]
+            palabras += re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{4,}', a['title'].lower())
             for h, _ in a['body']:
                 palabras += re.findall(r'[\wáéíóúüñçàèòïÁÉÍÓÚÑ]{5,}', h.lower())
             # strip accents: the search normalises them anyway, but every
